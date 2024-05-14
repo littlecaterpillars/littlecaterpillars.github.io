@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Etrain</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #services {
+            padding: 26px 0 40px 0;
+        }
+
+        #services .box {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 0 10px 40px 10px;
+            background: #fff;
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        #services .box:hover {
+            transform: scale(1.1);
+        }
+
+        #services .icon {
+            margin: 0 auto 15px auto;
+            padding-top: 12px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        #services .icon .service-icon {
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        #services .title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        #services .title a {
+            color: #111;
+        }
+
+        #services .box:hover .title a {
+            /* color: #c59c35; */
+            color: #11401c !important;
+        }
+
+        #services .box:hover .title a:hover {
+            text-decoration: none;
+        }
+
+        #services .description {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 0;
+            /* text-align: center; */
+        }
+
+        /* Style the card container */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        /* Style the image container */
+        .image {
+            width: 100%;
+            height: 200px;
+            background-color: #555;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Style the image */
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        /* Style the card content */
+        .content {
+            padding: 10px;
+        }
+
+        /* Style the card title */
+        .title {
+            /* color: grey;
+            font-size: 18px; */
+            color: #016d41;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        /* Style the card description */
+        .description {
+            color: black;
+            /* font-size: 14px;
+            color: black; */
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Style the card button */
+        .button {
+            border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        /* Style the hover state of the card */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transform: scale(1.06);
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        /* Style the hover state of the image */
+        .image:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Style the hover state of the button */
+        .button:hover {
+            background-color: #555;
+        }
+
+
+        a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        .cta-arrow {
+            --shift-distance: 0.25rem;
+            display: inline-block;
+            font-weight: 400;
+            font-size: var(--copy-regular-size);
+            line-height: 20px !important;
+            height: 2rem;
+            color: var(--link-color);
+            text-decoration: none;
+            position: relative;
+            padding-right: 2.5rem;
+            transform: translateX(0);
+            z-index: 1;
+            transition: color 0.15s ease-in-out, transform 0.3s ease, -webkit-transform 0.3s ease;
+            border-radius: 2em;
+
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -0.875rem;
+                right: 0;
+                left: calc(100% - 2rem);
+                border-radius: 2rem;
+                height: 3rem;
+                z-index: -1;
+                background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3EArrow Forward%3C/title%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='48' d='M268 112l144 144-144 144M392 256H100'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position-x: calc(100% - 0.4375rem);
+                background-position-y: center;
+                background-size: 1.125rem;
+                /* background-color: #ffe01b; */
+                background-color: #28a745b3;
+                transition: left 0.3s cubic-bezier(0.34, 1.2, 0.64, 1), right 0.3s ease,
+                    background-position 0.3s ease;
+            }
+
+            &:hover {
+                color: var(--link-color-hovered);
+                transform: translateX(var(--shift-distance));
+
+                &::before {
+                    background-position-x: calc(100% - var(--shift-distance) * 3.5);
+                    left: calc(var(--shift-distance) * -4);
+                    transition: left 0.3s cubic-bezier(0.4, 1.7, 0.7, 0.8), right 0.3s ease,
+                        background-position 0.3s ease;
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .news {
+            padding: 4.8px 0 9.6px 0;
+            text-align: center;
+        }
+
+        .news-heading {
+            font-size: 44px;
+            line-height: 1.4;
+
+            color: #333;
+        }
+
+        .news p {
+            font-size: 18px;
+            margin-bottom: 16px;
+            margin-top: 12px;
+            line-height: 1.8;
+        }
+
+        input[type="email"] {
+            display: inline-block;
+            width: 60%;
+            padding: 18px 36px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            height: 70px;
+            margin-top: 53px;
+            /* margin-top: 18px; */
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        input,
+        input::-webkit-input-placeholder {
+            font-size: 16px;
+            line-height: 3;
+        }
+
+        .bt {
+            margin-left: -160px;
+            font-size: 16px;
+            display: inline-block;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 20px;
+            background-color: #11401c;
+
+            /* Only necessary for .btn */
+            border: none;
+            cursor: pointer;
+            /* background-color: #48b774; */
+            color: #fff;
+        }
+
+        /* @media (max-width: 576px) {
+
+            .learning_part .learning_member_text {
+                padding-left: 0;
+                margin: 115px 0;
+            }
+
+            .advance_feature {
+                padding: 80px 0px 70px;
+                overflow: hidden;
+                margin: -380px 0;
+            }
+
+            .text {
+                position: absolute;
+                top: 297px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu single_page_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <h1 style="font-size: 21px;
+                            font-weight: bold;color: white;">Littel Caterpillers</h1>
+                            <!-- <img src="./img/kids-1/logo-1.jpg" style="height: 61px;
+                            width: 205px;" /> -->
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html" style="font-size: 18px;
+                                    font-weight: 500;">Home</a>
+                                </li>
+                                <li class="nav-item  active">
+                                    <a class="nav-link" href="about.html" style="font-size: 18px;
+                                    font-weight: 500;">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cource.html" style="font-size: 18px;
+                                    font-weight: 500;">Programs</a>
+                                </li>
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" href="#" style="font-size: 18px;
+                                    font-weight: 500;">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+                            <h2>About Us</h2>
+                            <p>Home<span>/</span>About Us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+
+
+    <!-- feature_part start-->
+    <!-- <section class="feature_part single_feature_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xl-3 align-self-center">
+                    <div class="single_feature_text ">
+                        <h2>Awesome <br> Feature</h2>
+                        <p>Set have great you male grass yielding an yielding first their you're
+                            have called the abundantly fruit were man </p>
+                        <a href="#" class="btn_1">Read More</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><i class="ti-layers"></i></span>
+                            <h4>Better Future</h4>
+                            <p>Set have great you male grasses yielding yielding first their to
+                                called deep abundantly Set have great you male</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><i class="ti-new-window"></i></span>
+                            <h4>Qualified Trainers</h4>
+                            <p>Set have great you male grasses yielding yielding first their to called
+                                deep abundantly Set have great you male</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="single_feature">
+                        <div class="single_feature_part single_feature_part_2">
+                            <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
+                            <h4>Job Oppurtunity</h4>
+                            <p>Set have great you male grasses yielding yielding first their to called deep
+                                abundantly Set have great you male</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- upcoming_event part start-->
+
+    <!-- learning part start-->
+    <section class="learning_part" style="padding: 193px 0px 210px;">
+        <div class="container">
+            <div class="row align-items-sm-center align-items-lg-stretch">
+                <div class="col-md-7 col-lg-7" style="margin: -101px 0 !important;">
+                    <div class="learning_img">
+                        <img src="./img/kids-1/ab-34.jpg" alt="" style="border-radius: 46%;
+                        margin: -34px 0 !important;
+                        padding-bottom: 120px;">
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <div class="learning_member_text">
+                        <h5>About us</h5>
+                        <h2>Littel Caterpillers</h2>
+                        <p>A place where protected little chrysalides are incubated to grow into beautiful, sensible
+                            and independent butterflies that spread the joy of freedom and beauty of life.</p>
+                        <p>
+                            Little Caterpillars is gradually gaining remarkable growth after its launch in the year
+                            2017. The ambitions and aspirations behind launching the school are the driving force
+                            towards the attainment of the motive in a systematic and disciplined manner. Little
+                            Caterpillars aims at providing a holistic learning environment that enables the
+
+                            children to adapt to the changing environmental factors.
+                        </p>
+                        <!-- <ul>
+                            <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
+                                gathered wear</li>
+                            <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
+                                night.</li>
+                        </ul> -->
+                        <!-- <a href="#" class="btn_1">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- learning part end-->
+
+    <section class="advance_feature learning_part">
+        <div class="container">
+
+            <div class="learning_member_text">
+                <h5>Philosophy</h5>
+                <h2>Our Philosophy</h2>
+                <p class="text" style="margin-top: -23px !important;">
+                    Educating the mind without educating the heart is no education at all.</p>
+
+            </div>
+            <p>Education does not just start or end with the alphabets or numbers. Destined ends do not just depend on
+                these alphanumeric characters. We need to understand the language of the little hearts and never-ending
+                question mark minds that look forward to their parents and teachers for answers. The children need a
+                kind of environment, where their minds are free to shoot out their unending queries and provides free
+                spacious play areas where they satisfy their quench for playing. Little Caterpillars was started with a
+                motive to achieve these goals. As researches suggest, the primary years of the children are crucial for
+                the development of their body and mind. Little Caterpillars assures to give complete assistance to the
+                parents who rely on it for the holistic development of their children. It provides its joiners with the
+                best learning methodologies, infra structural facilities and technical advancements in the field of
+                pre-school learning. Its huge play area is one dream option for any child to play.</p>
+
+        </div>
+    </section>
+
+
+    <section class="advance_feature learning_part">
+        <div class="container">
+            <div class="row align-items-sm-center align-items-xl-stretch">
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_member_text">
+                        <h5>Mission & Vision</h5>
+                        <h2>Our Mission and Vision</h2>
+                        <p style="margin-top: -23px !important;">we aim to provide each child with a nurturing and
+                            stimulating environment that promotes their overall growth and development</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="services section-bg" id="services">
+                <div class="container">
+                    <div class="row" style="margin: 0 -45px !important;">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="box">
+                                <div class="icon" style="background: #3f9352;">
+
+                                    <img src="./img/kids-1/icons8-goal-50.png" style="margin: -7px 0;">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                        class="bi bi-book" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                                    </svg> -->
+                                </div>
+
+                                <h4 class="title"><a href="" style="text-decoration: none;">Our Mission</a>
+                                </h4>
+
+                                <p class="description">To nurture and fortify every little mind in a holistic learning
+                                    environment, inculcating the ethical, cultural and social values that help them
+                                    adapt to the demands of contemporary society.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6">
+                            <div class="box">
+                                <div class="icon" style="background: #3f9352;">
+                                    <img src="./img/kids-1/icons8-vision-50.png" style="margin: -7px 0;">
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                                        class="bi bi-people" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                                    </svg> -->
+                                </div>
+
+                                <h4 class="title"><a href="" style="text-decoration: none;">Our Vision</a>
+                                </h4>
+
+                                <p class="description">Incessantly endeavouring to realize our vision by providing the
+                                    sophisticated learning resources and applying the technological advancements in
+                                    educating our future generations.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="advance_feature learning_part">
+        <div class="container">
+            <div class="row align-items-sm-center align-items-xl-stretch">
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_member_text">
+                        <h5>Team</h5>
+                        <h2>Our Team</h2>
+                        <p style="margin-top: -23px !important;">
+                            A teacher’s purpose is not to create students in his own image, but to develop students who
+                            can create their own image.</p>
+
+                    </div>
+                    <p>Any educational institution is built on the firm foundation of the hard work and sincerity of its
+                        faculty and support staff. Our teachers are all well trained in the Early Childhood Education.
+                        They apply the best teaching methodologies, teaching aids and technology for developing the
+                        creative, fine motor, gross motor and observation skills in the children.</p>
+
+                </div>
+                <div class="col-md-6 col-lg-6" style="">
+                    <div class="">
+                        <img src="./img/kids-1/team.jpg" alt="" style="    border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- member_counter counter start -->
+    <!-- <section class="member_counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">1024</span>
+                        <h4>All Teachers</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">960</span>
+                        <h4> All Students</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">1020</span>
+                        <h4>Online Students</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_member_counter">
+                        <span class="counter">820</span>
+                        <h4>Ofline Students</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- member_counter counter end -->
+
+    <!--::review_part start::-->
+    <!-- <section class="testimonial_part section_padding">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-xl-5">
+                    <div class="section_tittle text-center">
+                        <p>tesimonials</p>
+                        <h2>Happy Students</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="textimonial_iner owl-carousel">
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial_slider">
+                            <div class="row">
+                                <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xl-2 col-sm-4">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-none d-xl-block">
+                                    <div class="testimonial_slider_text">
+                                        <p>Behold place was a multiply creeping creature his domin to thiren open void
+                                            hath herb divided divide creepeth living shall i call beginning
+                                            third sea itself set</p>
+                                        <h4>Michel Hashale</h4>
+                                        <h5> Sr. Web designer</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 d-none d-xl-block">
+                                    <div class="testimonial_slider_img">
+                                        <img src="img/testimonial_img_1.png" alt="#">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+    <!--::blog_part end::-->
+
+    <!-- footer part start-->
+    <footer class="footer-area" style="">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-6 col-md-4 col-xl-3">
+                    <div class="single-footer-widget footer_1">
+                        <a href="index.html">
+                            <h1 style="font-size: 21px;
+                            font-weight: bold;">Littel Caterpillers</h1>
+                        </a>
+                        <p>But when shot real her. Chamber her one visite removal six
+                            sending himself boys scot exquisite existend an </p>
+                        <p>But when shot real her hamber her </p>
+                        <!-- <h4>Social Links</h4>
+                        <div class="social_icon">
+                            <div class="rounded-social-buttons">
+                                <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xl-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Useful Links</h4>
+                        <div class="contact_info">
+                            <div class="row">
+                                <div class="col">
+                                    <p><a href="#" style="font-size: 18px !important;color: #00000073;">Home</a></p>
+                                    <p><a href="#" style="font-size: 18px !important;color: #00000073;">About</a></p>
+                                    <p><a href="#" style="font-size: 18px !important;color: #00000073;">Contact Us</a>
+                                    </p>
+                                </div>
+                                <div class="col">
+
+                                    <p><a href="#" style="font-size: 18px !important;color: #00000073;">Programs</a></p>
+                                    <p><a href="#" style="font-size: 18px !important;color: #00000073;">Terms &
+                                            Conditions</a></p>
+                                    <p><a href="#" style="font-size: 18px !important;color: #00000073;">Privacy
+                                            Policy</a></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-md-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Contact us</h4>
+                        <div class="contact_info">
+                            <p><span> Address :</span> 320, KPR Colony, Manikonda, Hyderabad, Telangana 500089 </p>
+                            <p><span> Phone :</span> 093792 23344</p>
+                            <p><span> Email : </span>info@Caterpillers.com </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="footer-text m-0" style="color: #111;">
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;
+                                    2023 Littel Caterpillers Preschool
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

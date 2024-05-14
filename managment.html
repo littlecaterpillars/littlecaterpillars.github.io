@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Little Caterpillars</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <style>
+        .breadcrumb_bg {
+    background-image: url('./img/kids-1/Banner\ 2-1.png');
+    /* background-image: url(../img/kids-1/about-1.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+
+
+        .form-popup-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .form-popup-bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(94, 110, 141, 0.9);
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            overflow-y: auto;
+            z-index: 10000;
+        }
+
+        .form-popup-bg.is-visible {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+            -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+            transition: opacity 0.3s 0s, visibility 0s 0s;
+        }
+
+        .form-container {
+            background-color: #2d3638;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            padding: 40px;
+            color: #fff;
+        }
+
+        .close-button {
+            background: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: solid 1px #fff;
+        }
+
+        .form-popup-bg:before {
+            content: '';
+            background-color: #fff;
+            opacity: .25;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        /* .services .learning_img_imgs {
+    background-image: url('./img');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70% 100%;
+    background-position: left top;
+    position: absolute;
+    left: -85px;
+    bottom: 27px;
+} */
+        #services {
+            padding: 26px 0 40px 0;
+        }
+
+        #services .box {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 0 10px 40px 10px;
+            background: #fff;
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            /* height: 480px; */
+        }
+
+        .footer {
+            background-color: #b72167;
+            /* background: linear-gradient(rgb(0 0 0 / 61%), rgb(0 0 0 / 33%)), url(./img/kids-1/Footer\ Banner.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+
+        .footer .footer-item a {
+            /* line-height: 35px; */
+            color: var(--bs-body);
+            transition: 0.5s;
+            line-height: 30px;
+        }
+
+        .footer .footer-item p {
+            line-height: 35px;
+        }
+
+        .footer .footer-item a:hover {
+            letter-spacing: 2px;
+            color: var(--bs-primary);
+        }
+
+        /*** Footer End ***/
+
+        /*** copyright Start ***/
+        .copyright {
+            background: var(--bs-dark) !important;
+        }
+
+
+        #services .box:hover {
+            transform: scale(1.1);
+        }
+
+        #services .icon {
+            margin: 0 auto 15px auto;
+            padding-top: 12px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        #services .icon .service-icon {
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        #services .title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        #services .title a {
+            color: #111;
+        }
+
+        #services .box:hover .title a {
+            /* color: #c59c35; */
+            color: #11401c !important;
+        }
+
+        #services .box:hover .title a:hover {
+            text-decoration: none;
+        }
+
+        #services .description {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 0;
+            /* text-align: center; */
+        }
+
+        /* Style the card container */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        /* Style the image container */
+        .image {
+            width: 100%;
+            height: 200px;
+            background-color: #555;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Style the image */
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        /* Style the card content */
+        .content {
+            padding: 10px;
+        }
+
+        /* Style the card title */
+        .title {
+            /* color: grey;
+            font-size: 18px; */
+            color: #016d41;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        /* Style the card description */
+        .description {
+            color: black;
+            /* font-size: 14px;
+            color: black; */
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Style the card button */
+        .button {
+            border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        /* Style the hover state of the card */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transform: scale(1.06);
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        /* Style the hover state of the image */
+        .image:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Style the hover state of the button */
+        .button:hover {
+            background-color: #555;
+        }
+
+
+        a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        .cta-arrow {
+            --shift-distance: 0.25rem;
+            display: inline-block;
+            font-weight: 400;
+            font-size: var(--copy-regular-size);
+            line-height: 20px !important;
+            height: 2rem;
+            color: var(--link-color);
+            text-decoration: none;
+            position: relative;
+            padding-right: 2.5rem;
+            transform: translateX(0);
+            z-index: 1;
+            transition: color 0.15s ease-in-out, transform 0.3s ease, -webkit-transform 0.3s ease;
+            border-radius: 2em;
+
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -0.875rem;
+                right: 0;
+                left: calc(100% - 2rem);
+                border-radius: 2rem;
+                height: 3rem;
+                z-index: -1;
+                background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3EArrow Forward%3C/title%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='48' d='M268 112l144 144-144 144M392 256H100'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position-x: calc(100% - 0.4375rem);
+                background-position-y: center;
+                background-size: 1.125rem;
+                /* background-color: #ffe01b; */
+                background-color: #28a745b3;
+                transition: left 0.3s cubic-bezier(0.34, 1.2, 0.64, 1), right 0.3s ease,
+                    background-position 0.3s ease;
+            }
+
+            &:hover {
+                color: var(--link-color-hovered);
+                transform: translateX(var(--shift-distance));
+
+                &::before {
+                    background-position-x: calc(100% - var(--shift-distance) * 3.5);
+                    left: calc(var(--shift-distance) * -4);
+                    transition: left 0.3s cubic-bezier(0.4, 1.7, 0.7, 0.8), right 0.3s ease,
+                        background-position 0.3s ease;
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .news {
+            padding: 4.8px 0 9.6px 0;
+            text-align: center;
+        }
+
+        .news-heading {
+            font-size: 44px;
+            line-height: 1.4;
+
+            color: #333;
+        }
+
+        .news p {
+            font-size: 18px;
+            margin-bottom: 16px;
+            margin-top: 12px;
+            line-height: 1.8;
+        }
+
+        input[type="email"] {
+            display: inline-block;
+            width: 60%;
+            padding: 18px 36px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            height: 70px;
+            margin-top: 53px;
+            /* margin-top: 18px; */
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        input,
+        input::-webkit-input-placeholder {
+            font-size: 16px;
+            line-height: 3;
+        }
+
+        .bt {
+            margin-left: -160px;
+            font-size: 16px;
+            display: inline-block;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 20px;
+            background-color: #11401c;
+
+            /* Only necessary for .btn */
+            border: none;
+            cursor: pointer;
+            /* background-color: #48b774; */
+            color: #fff;
+        }
+
+        /* @media (max-width: 576px) {
+
+            .learning_part .learning_member_text {
+                padding-left: 0;
+                margin: 115px 0;
+            }
+
+            .advance_feature {
+                padding: 80px 0px 70px;
+                overflow: hidden;
+                margin: -380px 0;
+            }
+
+            .text {
+                position: absolute;
+                top: 297px;
+            }
+        } */
+        /* CSS Document */
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+
+        main {
+            /* padding: 15px;
+min-height: calc(100vh - 30px); */
+            /* display: flex;
+display: -webkit-flex; */
+            justify-content: center;
+            /* -webkit-justify-content: center; */
+            -webkit-justify-content: start;
+            align-items: start;
+            -webkit-align-items: start;
+            margin: -216px 0;
+        }
+
+        .flower-block {
+            height: 282px;
+            width: 282px;
+            border: 18px solid #1c0d69;
+            border-radius: 50%;
+            background-image: radial-gradient(at top, #ffa262 0%, #ff4a87 50%, #093eff 100%);
+            position: relative;
+            overflow: hidden;
+            margin: 44px -214px;
+            margin-top: 225px;
+        }
+
+        .flower-block::after {
+            content: "";
+            position: absolute;
+            background: #1c0d69;
+            width: 8px;
+            height: 50%;
+            bottom: 0;
+            left: 50%;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+        }
+
+        .flower-block::before {
+            content: "";
+            position: absolute;
+            background: #fff;
+            width: 30px;
+            height: 116px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            -webkit-transform: translate(-50%, -100%);
+            border-radius: 2em 2em 0 0;
+        }
+
+        .flower-common {
+            width: 280px;
+            height: 280px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            z-index: 1;
+            filter: drop-shadow(5px 5px 16px rgba(0, 0, 0, 0.5));
+        }
+
+        .petal {
+            width: 50%;
+            height: 50%;
+            background: #0051ff;
+            border-radius: 0% 50% 0% 80% / 0% 80% 0% 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: right bottom;
+            background: -webkit-radial-gradient(bottom right, #ff00eb 10%, #0051ff 100%);
+            background: radial-gradient(at bottom right, #ff00eb 10%, #0051ff 100%);
+            animation: 4s linear infinite ease-in-out;
+            -webkit-animation: 4s linear infinite ease-in-out;
+        }
+
+        .petal:nth-child(1) {
+            animation-name: petal1;
+            -webkit-animation-name: petal1;
+        }
+
+        .petal:nth-child(2) {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            animation-name: petal2;
+            -webkit-animation-name: petal2;
+        }
+
+        .petal:nth-child(3) {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            animation-name: petal3;
+            -webkit-animation-name: petal3;
+        }
+
+        .petal:nth-child(4) {
+            transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            animation-name: petal4;
+            -webkit-animation-name: petal4;
+        }
+
+        /* Animation */
+        @keyframes petal1 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(0deg) scaleX(0.8);
+                -webkit-transform: rotate(0deg) scaleX(0.8);
+            }
+        }
+
+        @-webkit-keyframes petal1 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(0deg) scaleX(0.8);
+                -webkit-transform: rotate(0deg) scaleX(0.8);
+            }
+        }
+
+        @keyframes petal2 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(90deg) scaleY(0.8);
+                -webkit-transform: rotate(90deg) scaleY(0.8);
+            }
+        }
+
+        @-webkit-keyframes petal2 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(90deg) scaleY(0.8);
+                -webkit-transform: rotate(90deg) scaleY(0.8);
+            }
+        }
+
+        @keyframes petal3 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(180deg) scaleX(0.8);
+                -webkit-transform: rotate(180deg) scaleX(0.8);
+            }
+        }
+
+        @-webkit-keyframes petal3 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(180deg) scaleX(0.8);
+                -webkit-transform: rotate(180deg) scaleX(0.8);
+            }
+        }
+
+        @keyframes petal4 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(270deg);
+                -webkit-transform: rotate(270deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(270deg) scaleY(0.8);
+                -webkit-transform: rotate(270deg) scaleY(0.8);
+            }
+        }
+
+        @-webkit-keyframes petal4 {
+
+            0%,
+            20%,
+            40%,
+            100% {
+                transform: rotate(270deg);
+                -webkit-transform: rotate(270deg);
+            }
+
+            10%,
+            30% {
+                transform: rotate(270deg) scaleY(0.8);
+                -webkit-transform: rotate(270deg) scaleY(0.8);
+            }
+        }
+
+        .petal:after {
+            content: "";
+            opacity: 0.9;
+            position: absolute;
+            background-image: linear-gradient(0deg,
+                    rgba(0, 0, 0, 1) 0%,
+                    rgba(0, 0, 0, 5) 70%,
+                    rgba(0, 0, 0, 0) 100%);
+            height: 180px;
+            width: 1px;
+            transform: rotate(-45deg);
+            right: 0;
+            bottom: 1px;
+            transform-origin: bottom right;
+        }
+
+        .flower-2 {
+            width: 180px;
+            height: 180px;
+        }
+
+        .flower-2 .petal {
+            background: #ff0066;
+            background: -webkit-radial-gradient(bottom right, #ff637d 10%, #ff0066 100%);
+            background: radial-gradient(at bottom right, #ff637d 10%, #ff0066 100%);
+        }
+
+        .flower-2 .petal:after {
+            height: 100px;
+        }
+
+        .flower-3 {
+            width: 80px;
+            height: 80px;
+        }
+
+        .flower-3 .petal {
+            background: #ffdeff;
+        }
+
+        .flower-3 .petal:after {
+            height: 20px;
+        }
+
+        .flower-3::before {
+            content: "";
+            position: absolute;
+            background: #000;
+            width: 4px;
+            height: 4px;
+            right: calc(50% - 2px);
+            top: calc(50% - 2px);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        /* Face */
+        .flower-block .face {
+            width: 54px;
+            height: 54px;
+            position: absolute;
+            top: 79px;
+            left: 50%;
+            transform: translatex(-50%);
+            -webkit-transform: translatex(-50%);
+            background-image: linear-gradient(0deg, #a5c6dc 0%, #ffffff 100%);
+            box-shadow: 3px -1px 4px 0 rgba(0, 0, 0, 0.24);
+            border-radius: 50%;
+        }
+
+        .flower-block .bouquet {
+            display: block;
+            width: 30px;
+            height: 36px;
+            left: -8px;
+            bottom: calc(100% - 1px);
+            border-right: 2px solid #fff;
+            position: absolute;
+            border-radius: 0% 60% 0% 80% / 0% 80% 0% 60%;
+        }
+
+        .flower-block .bouquet:last-child {
+            left: 32px;
+            transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+        }
+
+        .flower-block .face::after,
+        .flower-block .face::before {
+            content: "";
+            position: absolute;
+            background: #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .flower-block .face::before {
+            left: 10%;
+        }
+
+        .flower-block .face::after {
+            right: 10%;
+        }
+
+        /* Waves */
+        .waves {
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            background: #b5c734;
+            bottom: 0;
+            left: 0;
+        }
+
+        .waves .wave {
+            position: absolute;
+            background: #b5c734;
+            bottom: 0;
+            bottom: 50%;
+            width: 50%;
+            left: 0;
+            height: 100%;
+            border-radius: 51% 33% 65% 0% / 53% 36% 0% 0%;
+        }
+
+        .waves .wave:first-child::before,
+        .waves .wave:first-child::after {
+            content: "";
+            position: absolute;
+            border: 20px solid #8ca000;
+            width: 100%;
+            height: 190px;
+            border-radius: 0% 100% 100% 0% / 0% 86% 0% 0%;
+            right: -18px;
+            bottom: -90%;
+        }
+
+        .waves .wave:first-child::before {
+            width: 70%;
+            height: 130px;
+            right: 16%;
+        }
+
+        .waves .wave:last-child {
+            bottom: 50%;
+            width: 50%;
+            left: 50%;
+            height: 170%;
+            border-radius: 100% 0% 65% 0% / 68% 70% 0% 0%;
+        }
+
+        .waves .wave:last-child:before,
+        .waves .wave:last-child:after {
+            content: "";
+            position: absolute;
+            border: 20px solid #8ca000;
+            width: 110%;
+            height: 360px;
+            border-radius: 100% 0% 65% 0% / 68% 70% 0% 0%;
+            right: -10%;
+            bottom: -75%;
+        }
+
+        .waves .wave:last-child:after {
+            width: 80%;
+            height: 290px;
+        }
+
+        /* Title */
+        .title {
+            margin-top: -91px;
+            padding: 27px -2px 46px !important;
+            background: #1c0d69;
+            text-align: center;
+            border-radius: 4em;
+            color: #fff;
+            text-transform: uppercase;
+            /* margin: -87px -22px; */
+            /* margin: -52px -22px; */
+            margin: -52px -156px;
+            margin-left: -298px;
+            width: 456px;
+        }
+
+        @media (max-width: 1028px) {
+            .main {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 576px) {
+            .learning_part .learning_img {
+                position: inherit;
+                left: 0;
+                bottom: 0;
+                margin-bottom: 158px;
+                position: absolute !important;
+                bottom: -66px !important;
+                left: 204px !important;
+            }
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+        #some-box {
+            background: #fff;
+            padding: 40px 0px 80px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #some-box h1 {
+            text-align: center;
+        }
+
+        #some-box h3 {
+            font-size: 26px;
+        }
+
+        #some-box a {
+            color: #70BCB8;
+            text-decoration: none;
+            display: block;
+            font-weight: bold;
+        }
+
+        /* #some-box a:hover {color:#8E7BB2;} */
+
+        article.row {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 45px 0;
+        }
+
+        article.row div {
+            width: 49.4%;
+            display: inline-block;
+            position: relative;
+            border: 1px solid white;
+        }
+
+        article.row {
+            border: 1px solid white;
+        }
+
+        /* article.row:hover {border:1px solid yellow;} */
+        /* article.row div:hover {border:1px solid green;} */
+
+
+        #idea-one img,
+        #idea-two img,
+        #idea-three img {
+            position: absolute;
+            bottom: -20px;
+            left: 50px;
+        }
+
+        /* Here's the column repositioning magic. This media query says "Apply these styles only until page width is greater than 750px" 
+
+***To make this work, your media query has to be beneath your other styles to keep it from being overwritten later on by your general styles*** */
+        @media(max-width:750px) {
+
+            /* This resizes the divs that contain your content to fill the width of the page so that they stack vertically */
+            article.row div {
+                min-width: 300px;
+                width: 90%;
+                margin: 0 5%;
+                text-align: center;
+                display: block;
+            }
+
+            /* Center your text */
+            #some-other-box h3 {
+                text-align: center;
+            }
+
+            /* Center your image */
+            #idea-one img,
+            #idea-two img,
+            #idea-three img {
+                position: relative;
+                margin: auto;
+                left: inherit;
+                bottom: inherit;
+            }
+
+            /* This tells the browswer to stack the content vertically */
+            #idea-two {
+                display: -webkit-box;
+                display: -moz-box;
+                display: box;
+                -webkit-box-orient: vertical;
+                -moz-box-orient: vertical;
+                box-orient: vertical;
+            }
+
+            /* This tells the browswer to draw the first box (div:first-of-type) within our stacked content block (identified in the previous rule) in the second position ([...]box-ordinal-group:2;)
+  This gives us a nice arrangement of alternating text and images, and allows us two have a custom layout for smaller or wider screens.*/
+            #idea-two div:first-of-type {
+                -webkit-box-ordinal-group: 2;
+                -moz-box-ordinal-group: 2;
+                box-ordinal-group: 2;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .learning_part .learning_member_text {
+                padding-left: 0;
+                /* padding-left: 91px; */
+                margin: auto !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .learning_part .learning_member_text h2 {
+                font-size: 25px;
+                margin-bottom: 29px;
+                line-height: 35px;
+                margin-top: 15px;
+            }
+            .swetha-img{
+                width: 353px !important;
+        position: relative;
+        left: 113px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./img/kids-1/logo-1.jpg" style="height: 61px;
+                            width: 205px;" />
+
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="index.html" style="font-size: 18px;
+                                    font-weight: 500;">Home</a>
+                                </li>
+                                <div class="nav-item dropdown">
+                                    <a href="JavaScript:void(0)" class="nav-link dropdown-toggle nav-link active"
+                                        data-bs-toggle="dropdown" style="font-size: 18px;
+                                    font-weight: 500;color: rgb(18 17 20 / 80%);">About</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a href="mission.html" class="dropdown-item">About Us</a>
+                                        <!-- <a href="vision.html" class="dropdown-item">Vision</a> -->
+                                        <a href="managment.html" class="dropdown-item nav-link active">Board of Directors</a>
+                                        <a href="keyfeatures.html" class="dropdown-item">Key Features</a>
+
+                                    </div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="curriculum.html" style="font-size: 18px;
+                                    font-weight: 500;">Curriculum</a>
+                                </li>
+                                <div class="nav-item dropdown">
+                                    <a href="JavaScript:void(0)" class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown" style="font-size: 18px;
+                                    font-weight: 500;color: rgb(18 17 20 / 80%);">Programs</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a href="toddler.html" class="dropdown-item">PlayGroup</a>
+                                        <a href="nursery.html" class="dropdown-item">Nursery</a>
+                                        <a href="pp1.html" class="dropdown-item">PP-I</a>
+                                        <a href="pp2.html" class="dropdown-item">PP-II</a>
+                                        <a href="daycare.html" class="dropdown-item">Daycare</a>
+                                        <a href="activity.html" class="dropdown-item">Activity Center</a>
+                                    </div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="schools.html" style="font-size: 18px;
+                                    font-weight: 500;">Our Schools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="career.html" style="font-size: 18px;
+                                    font-weight: 500;">Careers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" style="font-size: 18px;
+                                    font-weight: 500;">Contact Us</a>
+                                </li>
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" id="btnOpenForm" href="#" style="font-size: 18px;
+                                    font-weight: 500;">Enroll Now</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+    <div class="form-popup-bg">
+        <div class="form-container">
+            <button id="btnCloseForm" class="close-button">X</button>
+            <h1 style="color: white;">Contact Us</h1>
+            <p style="color: white;">For more information. Please complete this form.</p>
+            <br>
+            <form action="" class=" pr-5 mb-5" method="post" id="contactForm" name="submit-to-google-sheet">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <textarea class="form-control" name="message" id="message" cols="10" rows="3"
+                            placeholder="Write your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="submit" value="Send Message" style="color: #11401c;
+                                                background-color: #9ef09f;
+                                                border-color: #9ef09f;" class="btn btn-primary rounded-0 py-2 px-4">
+                        <span class="submitting"></span>
+                    </div>
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        function closeForm() {
+            $('.form-popup-bg').removeClass('is-visible');
+        }
+
+        $(document).ready(function ($) {
+
+            /* Contact Form Interactions */
+            $('#btnOpenForm').on('click', function (event) {
+                event.preventDefault();
+
+                $('.form-popup-bg').addClass('is-visible');
+            });
+
+            //close popup when clicking x or off popup
+            $('.form-popup-bg').on('click', function (event) {
+                if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+                    event.preventDefault();
+                    $(this).removeClass('is-visible');
+                }
+            });
+
+
+
+        });
+
+    </script>
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+
+                            <h2>Board of Directors</h2>
+                            <p>Home<span>/</span>Board of Directors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+
+    <section class="advance_feature learning_part">
+        <div class="container">
+            <img src="./img/icon/star.png" style="height: 318px;
+            position: absolute;
+            left: 3px;
+            top: 113px;">
+            <div class="row align-items-sm-center align-items-xl-stretch">
+                <div class="col-md-6 col-lg-6">
+                    <div class="" style="margin: 55px 0;">
+                        <img class="swetha-img" src="./img/kids-1/KMA09982.JPG" alt="" style="    border-radius: 20px;
+                        /* width: 415px; */
+                        /* height: 303px; */
+                        border: 1px solid #000;
+                        margin: 49px -115px;">
+
+                        <!-- <img src="./img/little-imgs/IMG_4425.jpg" alt="" style="    border-radius: 20px;height: 302px;"> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_member_text" style="margin: 55px -122px;">
+                        <!-- <h5>Founder</h5> -->
+                        <h2>Ms. Swetha Atlury</h2>
+                        <h6 style="margin: -25px 0;">Co-Founder & Managing Director</h6>
+                        <p style="margin: 54px 0;">
+                            With a profound passion for education and child development, Ms. Swetha brings over seven
+                            years of invaluable experience in the field of education. Ms. Swetha’s journey is marked by
+                            a relentless commitment to nurturing young minds, collaborating with parent and teacher
+                            community, and creating a nurturing environment for learning.
+
+
+                        </p>
+                        <p style="margin: -40px 0;">
+                            The holistic growth of Little Caterpillar, transforming into one of the most beloved
+                            preschools of Manikonda is a testament to her vision and leadership capabilities.
+                        </p>
+                        <p style="    margin: 63px 0;">
+                            Her unwavering dedication to providing quality education is underscored by her academic
+                            prowess, as she holds a Masters in Business Information Systems.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="advance_feature learning_part">
+        <div class="container">
+            <img src="./img/icon/star2.png" style="    height: 318px;
+            position: absolute;
+            left: 1334px;
+            top: 113px;">
+            <div class="row align-items-sm-center align-items-xl-stretch">
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_member_text">
+                        <!-- <h5>Founder</h5> -->
+                        <h2>Ms. Priya Rao Polina</h2>
+                        <h6 style="margin: -25px 0;">Co-Founder & Managing Director</h6>
+                        <p style="margin: 54px 0;">
+                            Ms. Priya Rao is a remarkable professional who has achieved exceptional success at a young
+                            age. Her journey through the Finance, Fintech, and Telecom industries has been marked by
+                            excellence and an unwavering dedication to her work. However, it was in the world of
+                            edupreneurship that she truly found her calling.
+
+                        </p>
+                        <p style="margin: -40px 0;">
+                            Taking the helm of Little Caterpillars Pre-School, Ms. Rao embarked on a transformative
+                            journey, shaping it into a thriving early learning destination. Her visionary leadership and
+                            passion for education have turned this institution into a place where young minds flourish
+                            and grow.
+                        </p>
+                        <p style="    margin: 63px 0;">
+                            She holds a Management Masters degree from XIMB, Bhubaneshwar, a testament to her academic
+                            prowess and commitment to personal growth.
+                        </p>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="" style="margin: 55px 0;">
+                        <img src="./img/kids-1/board-2.webp" alt="" style="border-radius: 20px;
+                            width: 415px;
+                            border: 1px solid #000;">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--footer start-->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Little Caterpillars</h4>
+                        <p style="color: #ede7e7;font-size: 16px;">A sanctuary where little chrysalides are nurtured
+                            to blossom into
+                            beautiful, wise, and independent butterflies, equipped to soar with the joys and adventures
+                            of life and embrace a lifelong love of learning as tomorrow's leaders
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <!-- <i class="fas fa-share fa-2x text-white me-2"></i> -->
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Quick Links</h4>
+                        <a href="mission.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="curriculum.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Curriculum</a>
+                        <a href="schools.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Our Schools</a>
+                        <a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Enquire Now</a>
+						<a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Programs</h4>
+                        <a href="toddler.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PlayGroup</a>
+                        <a href="nursery.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Nursery</a>
+                        <a href="pp1.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-1</a>
+						<a href="pp2.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-2</a>
+						<a href="daycare.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Daycare</a>
+						<a href="activity.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Activity Center</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Contact Info</h4>
+                        <a href="" style="color: white;
+                    font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> 320, KPR Colony, Manikonda,
+                            Hyderabad, Telangana 500089 </a>
+
+
+                        <a href="" style="color: white;
+                    font-size: 16px;"><i class="fas fa-phone me-2"></i> 093792 23344</a>
+                        <a href="" style="color: white;
+                     font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> Plot no. 84, Tirumala Hills,
+                            Road No. 4, near GHMC park, Puppal Guda,
+                            Hyderabad, Telangana 500089:</a>
+                        <a href="" style="color: white;
+                 font-size: 16px;"><i class="fas fa-phone me-2"></i> 8792111222</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="footer-text " style="font-size: 17px;
+                            color: #fff8f8bf;">
+                                    Copyright &copy;
+                                    2023 Little Caterpillars Preschool
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

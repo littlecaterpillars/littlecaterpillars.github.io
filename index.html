@@ -1,0 +1,3035 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Little Caterpillars</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <style>
+        .asterisks {
+            list-style-type: '* ';
+            font-size: 49px !important;
+            margin: 6px 0;
+            color: #178b4abf;
+        }
+
+        .img1 {
+            transform: rotate(-121deg);
+            /* border: 0.5em solid #d37b7b;
+            box-shadow: 0.5em 0.5em 0.5em #d37b7b; */
+
+        }
+
+        .img2 {
+            transform: rotate(-83deg);
+            /* border: 0.5em solid #d37b7b;
+            box-shadow: 0.5em 0.5em 0.5em #d37b7b; */
+
+        }
+
+        .img3 {
+            transform: rotate(30deg);
+            /* border: 0.5em solid #d37b7b;
+            box-shadow: 0.5em 0.5em 0.5em #d37b7b; */
+
+        }
+
+        .img4 {
+            transform: rotate(30deg);
+            /* border: 0.5em solid #d37b7b;
+            box-shadow: 0.5em 0.5em 0.5em #d37b7b; */
+
+        }
+
+        /* .loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15px 0 0 -15px;
+
+  animation: loading 2s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: perspective(120px) rotateX(180deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(120px) rotateX(180deg) rotateY(-180deg);
+  }
+} */
+        .advance_feature::after {
+            background-image: url(./img/icon/hands.png);
+        }
+
+        .instructions {
+            text-align: center;
+            font-size: 20px;
+            margin: 15vh;
+        }
+
+        /* //////////////////////////////////////////////////////////////////////////////////////////////
+	//   Default Modal Styles   //
+////////////////////////////////////////////////////////////////////////////////////////////// */
+        /*   This is the background overlay   */
+        .backgroundOverlay {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* background: #000000; */
+            opacity: .85;
+            filter: alpha(opacity=85);
+            -moz-opacity: .85;
+            z-index: 101;
+            /* display: none; */
+        }
+
+        /*   This is the Popup Window   */
+        .delayedPopupWindow {
+            position: fixed;
+            width: auto;
+            max-width: 387px;
+            /* height: 310px; */
+            height: 541px;
+            border-radius: 13px;
+            top: 58%;
+            left: 5%;
+            margin-left: -69px;
+            margin-top: -290px;
+            background-color: #ffffff;
+            border: 2px solid #ec0667;
+            /* border: 2px solid #333; */
+            z-index: 102;
+            padding: 10px 20px;
+            float: left !important;
+        }
+
+        /*   This is the closing button  */
+        #btnClose {
+            width: 100%;
+            display: block;
+            text-align: right;
+            text-decoration: none;
+            color: #BCBCBC;
+        }
+
+        /*   This is the closing button hover state  */
+        #btnClose:hover {
+            color: #c90c12;
+        }
+
+        /*   This is the description headline and paragraph for the form   */
+        #delayedPopup>div.formDescription {
+            float: left;
+            display: block;
+            width: 44%;
+            padding: 1% 3%;
+            font-size: 18px;
+            color: #666;
+            clear: left;
+        }
+
+        /*   This is the styling for the form's headline   */
+        #delayedPopup>div.formDescription h2 {
+            color: #444444;
+            font-size: 36px;
+            line-height: 40px;
+        }
+
+        /* 
+////////// MailChimp Signup Form //////////////////////////////
+*/
+
+        /*   This is the signup form body  */
+        #delayedPopup #mc_embed_signup {
+            float: left;
+            width: 47%;
+            padding: 1%;
+            display: block;
+            font-size: 16px;
+            color: #666;
+            margin-left: 1%;
+        }
+
+        /*   This is the styling for the signup form inputs  */
+        #delayedPopup #mc-embedded-subscribe-form input {
+            /* width: 95%;
+            height: 30px;
+            font-size: 18px;
+            padding: 3px;
+            margin-bottom: 5px; */
+            width: 177%;
+            height: 40px;
+            font-size: 18px;
+            padding: 3px;
+            margin-bottom: 5px;
+
+        }
+
+        /*   This is the styling for the signup form inputs when they are being hovered with the mouse  */
+        #delayedPopup #mc-embedded-subscribe-form input:hover {
+            border: solid 2px #40c348;
+            box-shadow: 0 1px 3px #AAAAAA;
+        }
+
+        /*   This is the styling for the signup form inputs when they are focused  */
+        #delayedPopup #mc-embedded-subscribe-form input:focus {
+            border: solid 2px #40c348;
+            box-shadow: none;
+        }
+
+        /*   This is the styling for the signup form submit button  */
+        #delayedPopup #mc-embedded-subscribe {
+            width: 100% !important;
+            height: 40px !important;
+            margin: 10px auto 0 auto;
+            background: #5D9E62;
+            border: none;
+            color: #fff;
+        }
+
+        /*   This is the styling for the signup form submit button hover state  */
+        #delayedPopup #mc-embedded-subscribe:hover {
+            background: #40c348;
+            color: #fff;
+            box-shadow: none !important;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #b72167;
+            /* background: linear-gradient(rgb(0 0 0 / 61%), rgb(0 0 0 / 33%)), url(./img/kids-1/Footer\ Banner.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+
+        .footer .footer-item a {
+            /* line-height: 35px; */
+            color: var(--bs-body);
+            transition: 0.5s;
+            line-height: 30px;
+        }
+
+        .footer .footer-item p {
+            line-height: 35px;
+        }
+
+        .footer .footer-item a:hover {
+            letter-spacing: 2px;
+            color: var(--bs-primary);
+        }
+
+        /*** Footer End ***/
+
+        /*** copyright Start ***/
+        .copyright {
+            background: var(--bs-dark) !important;
+        }
+
+        /*** copyright end ***/
+        .nav-link {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1320px;
+        }
+
+        section {
+            overflow: hidden;
+        }
+
+        .cover::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /* background-color: #000; */
+            background-color: #000000c9;
+            content: "";
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+
+
+        .section-header h3 {
+            font-size: 36px;
+            color: #413e66;
+            text-align: center;
+            font-weight: 700;
+            position: relative;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .section-header p {
+            text-align: center;
+            margin: auto;
+            font-size: 15px;
+            padding-bottom: 60px;
+            color: #535074;
+            width: 50%;
+        }
+
+        @media (max-width: 767px) {
+            .section-header p {
+                width: 100%;
+            }
+        }
+
+        #services {
+            padding: 26px 0 40px 0;
+        }
+
+        /* #services .box {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 0 10px 40px 10px;
+            background: #fff;
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+        } */
+
+        #services .box:hover {
+            /* transform: scale(1.1); */
+        }
+
+        #services .icon {
+            margin: 0 auto 15px auto;
+            padding-top: 12px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        #services .icon .service-icon {
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        #services .title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        #services .title a {
+            color: #111;
+        }
+
+        #services .box:hover .title a {
+            /* color: #c59c35; */
+            color: #11401c !important;
+        }
+
+        #services .box:hover .title a:hover {
+            text-decoration: none;
+        }
+
+        #services .description {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 0;
+            /* text-align: center; */
+        }
+
+        /* Style the card container */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            /* margin: auto; */
+            text-align: center;
+            font-family: arial;
+            border-radius: 10px;
+            transition: 0.3s;
+            margin: 6px -1px;
+        }
+
+        /* Style the image container */
+        .image {
+            width: 100%;
+            height: 200px;
+            background-color: #555;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Style the image */
+        .image img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+            transition: 0.3s;
+        }
+
+        /* Style the card content */
+        .content {
+            padding: 10px;
+        }
+
+        /* Style the card title */
+        .title {
+            /* color: grey;
+            font-size: 18px; */
+            color: #016d41;
+            font-size: 26px;
+            font-weight: 700;
+
+        }
+
+        /* Style the card description */
+        .description {
+            color: black;
+            /* font-size: 14px;
+            color: black; */
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Style the card button */
+        .button {
+            border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: #ec0667;
+            /* background-color: #155b3a; */
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        /* Style the hover state of the card */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transform: scale(1.06);
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        /* Style the hover state of the image */
+        .image:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Style the hover state of the button */
+        .button:hover {
+            /* background-color: #555; */
+        }
+
+
+        a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        .cta-arrow {
+            --shift-distance: 0.25rem;
+            display: inline-block;
+            font-weight: 400;
+            font-size: var(--copy-regular-size);
+            line-height: 20px !important;
+            height: 2rem;
+            color: var(--link-color);
+            text-decoration: none;
+            position: relative;
+            padding-right: 2.5rem;
+            transform: translateX(0);
+            z-index: 1;
+            transition: color 0.15s ease-in-out, transform 0.3s ease, -webkit-transform 0.3s ease;
+            border-radius: 2em;
+
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -0.875rem;
+                right: 0;
+                left: calc(100% - 2rem);
+                border-radius: 2rem;
+                height: 3rem;
+                z-index: -1;
+                background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3EArrow Forward%3C/title%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='48' d='M268 112l144 144-144 144M392 256H100'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position-x: calc(100% - 0.4375rem);
+                background-position-y: center;
+                background-size: 1.125rem;
+                /* background-color: #ffe01b; */
+                background-color: #28a745b3;
+                transition: left 0.3s cubic-bezier(0.34, 1.2, 0.64, 1), right 0.3s ease,
+                    background-position 0.3s ease;
+            }
+
+            &:hover {
+                color: var(--link-color-hovered);
+                transform: translateX(var(--shift-distance));
+
+                &::before {
+                    background-position-x: calc(100% - var(--shift-distance) * 3.5);
+                    left: calc(var(--shift-distance) * -4);
+                    transition: left 0.3s cubic-bezier(0.4, 1.7, 0.7, 0.8), right 0.3s ease,
+                        background-position 0.3s ease;
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .news {
+            padding: 4.8px 0 9.6px 0;
+            text-align: center;
+        }
+
+        .news-heading {
+            font-size: 44px;
+            line-height: 1.4;
+
+            color: #333;
+        }
+
+        .news p {
+            font-size: 18px;
+            margin-bottom: 16px;
+            margin-top: 12px;
+            line-height: 1.8;
+        }
+
+        input[type="email"] {
+            display: inline-block;
+            width: 60%;
+            padding: 18px 36px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            height: 70px;
+            margin-top: 53px;
+            /* margin-top: 18px; */
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        input,
+        input::-webkit-input-placeholder {
+            font-size: 16px;
+            line-height: 3;
+        }
+
+        .bt {
+            margin-left: -160px;
+            font-size: 16px;
+            display: inline-block;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 20px;
+            background-color: #11401c;
+
+            /* Only necessary for .btn */
+            border: none;
+            cursor: pointer;
+            /* background-color: #48b774; */
+            color: #fff;
+        }
+
+        .svg-inline--fa {
+            vertical-align: -0.200em;
+            /* margin: 0 61px; */
+        }
+
+        .rounded-social-buttons {
+            /* text-align: center; */
+        }
+
+        .rounded-social-buttons .social-button {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            width: 3.125rem;
+            height: 3.125rem;
+            border: 0.125rem solid transparent;
+            padding: 0;
+            text-decoration: none;
+            text-align: center;
+            color: #fefefe;
+            font-size: 1.5625rem;
+            font-weight: normal;
+            line-height: 2em;
+            border-radius: 1.6875rem;
+            transition: all 0.5s ease;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .rounded-social-buttons .social-button:hover,
+        .rounded-social-buttons .social-button:focus {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+
+        .rounded-social-buttons .fa-twitter,
+        .fa-facebook-f,
+        .fa-linkedin,
+        .fa-youtube,
+        .fa-instagram {
+            font-size: 25px;
+        }
+
+        .rounded-social-buttons .social-button.facebook {
+            background: #3b5998;
+        }
+
+        .rounded-social-buttons .social-button.facebook:hover,
+        .rounded-social-buttons .social-button.facebook:focus {
+            color: #3b5998;
+            background: #fefefe;
+            border-color: #3b5998;
+        }
+
+        .rounded-social-buttons .social-button.twitter {
+            background: #55acee;
+        }
+
+        .rounded-social-buttons .social-button.twitter:hover,
+        .rounded-social-buttons .social-button.twitter:focus {
+            color: #55acee;
+            background: #fefefe;
+            border-color: #55acee;
+        }
+
+        .rounded-social-buttons .social-button.linkedin {
+            background: #007bb5;
+        }
+
+        .rounded-social-buttons .social-button.linkedin:hover,
+        .rounded-social-buttons .social-button.linkedin:focus {
+            color: #007bb5;
+            background: #fefefe;
+            border-color: #007bb5;
+        }
+
+        .rounded-social-buttons .social-button.youtube {
+            background: #bb0000;
+        }
+
+        .rounded-social-buttons .social-button.youtube:hover,
+        .rounded-social-buttons .social-button.youtube:focus {
+            color: #bb0000;
+            background: #fefefe;
+            border-color: #bb0000;
+        }
+
+        .rounded-social-buttons .social-button.instagram {
+            background: #125688;
+        }
+
+        .rounded-social-buttons .social-button.instagram:hover,
+        .rounded-social-buttons .social-button.instagram:focus {
+            color: #125688;
+            background: #fefefe;
+            border-color: #125688;
+        }
+
+        .testim {
+            width: 100%;
+            /* position: absolute;
+            top: 50%; */
+            -webkit-transform: translatey(-50%);
+            -moz-transform: translatey(-50%);
+            -ms-transform: translatey(-50%);
+            -o-transform: translatey(-50%);
+            transform: translatey(-50%);
+        }
+
+        .testim .wrap {
+            position: relative;
+            width: 100%;
+            max-width: 1020px;
+            padding: 40px 20px;
+            margin: auto;
+        }
+
+        .testim .arrow {
+            display: block;
+            position: absolute;
+            color: #eee;
+            /* color: black; */
+            cursor: pointer;
+            /* font-size: 2em; */
+            font-size: 4em;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            padding: 5px;
+            z-index: 22222222;
+        }
+
+        .testim .arrow:before {
+            cursor: pointer;
+        }
+
+        .testim .arrow:hover {
+            color: #ea830e;
+        }
+
+
+        .testim .arrow.left {
+            left: 10px;
+        }
+
+        .testim .arrow.right {
+            right: 10px;
+        }
+
+        .testim .dots {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            bottom: 60px;
+            left: 0;
+            display: block;
+            z-index: 3333;
+            height: 12px;
+        }
+
+        .testim .dots .dot {
+            list-style-type: none;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            margin: 0 10px;
+            cursor: pointer;
+            -webkit-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            position: relative;
+        }
+
+        .testim .dots .dot.active,
+        .testim .dots .dot:hover {
+            background: #11401c;
+            border-color: #11401c;
+
+        }
+
+        .testim .dots .dot.active {
+            -webkit-animation: testim-scale .5s ease-in-out forwards;
+            -moz-animation: testim-scale .5s ease-in-out forwards;
+            -ms-animation: testim-scale .5s ease-in-out forwards;
+            -o-animation: testim-scale .5s ease-in-out forwards;
+            animation: testim-scale .5s ease-in-out forwards;
+        }
+
+        .testim .cont {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testim .cont>div {
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 0 70px 0;
+            opacity: 0;
+        }
+
+        .testim .cont>div.inactive {
+            opacity: 1;
+        }
+
+
+        .testim .cont>div.active {
+            position: relative;
+            opacity: 1;
+        }
+
+
+        .testim .cont div .img img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+        }
+
+        .testim .cont div h2 {
+            color: #11401c;
+            font-size: 1em;
+            margin: 15px 0;
+        }
+
+        .testim .cont div p {
+            font-size: 1.15em;
+            color: black;
+            width: 80%;
+            margin: auto;
+        }
+
+        .testim .cont div.active .img img {
+            -webkit-animation: testim-show .5s ease-in-out forwards;
+            -moz-animation: testim-show .5s ease-in-out forwards;
+            -ms-animation: testim-show .5s ease-in-out forwards;
+            -o-animation: testim-show .5s ease-in-out forwards;
+            animation: testim-show .5s ease-in-out forwards;
+        }
+
+        .testim .cont div.active h2 {
+            -webkit-animation: testim-content-in .4s ease-in-out forwards;
+            -moz-animation: testim-content-in .4s ease-in-out forwards;
+            -ms-animation: testim-content-in .4s ease-in-out forwards;
+            -o-animation: testim-content-in .4s ease-in-out forwards;
+            animation: testim-content-in .4s ease-in-out forwards;
+        }
+
+        .testim .cont div.active p {
+            -webkit-animation: testim-content-in .5s ease-in-out forwards;
+            -moz-animation: testim-content-in .5s ease-in-out forwards;
+            -ms-animation: testim-content-in .5s ease-in-out forwards;
+            -o-animation: testim-content-in .5s ease-in-out forwards;
+            animation: testim-content-in .5s ease-in-out forwards;
+        }
+
+        .testim .cont div.inactive .img img {
+            -webkit-animation: testim-hide .5s ease-in-out forwards;
+            -moz-animation: testim-hide .5s ease-in-out forwards;
+            -ms-animation: testim-hide .5s ease-in-out forwards;
+            -o-animation: testim-hide .5s ease-in-out forwards;
+            animation: testim-hide .5s ease-in-out forwards;
+        }
+
+        .testim .cont div.inactive h2 {
+            -webkit-animation: testim-content-out .4s ease-in-out forwards;
+            -moz-animation: testim-content-out .4s ease-in-out forwards;
+            -ms-animation: testim-content-out .4s ease-in-out forwards;
+            -o-animation: testim-content-out .4s ease-in-out forwards;
+            animation: testim-content-out .4s ease-in-out forwards;
+        }
+
+        .testim .cont div.inactive p {
+            -webkit-animation: testim-content-out .5s ease-in-out forwards;
+            -moz-animation: testim-content-out .5s ease-in-out forwards;
+            -ms-animation: testim-content-out .5s ease-in-out forwards;
+            -o-animation: testim-content-out .5s ease-in-out forwards;
+            animation: testim-content-out .5s ease-in-out forwards;
+        }
+
+        @-webkit-keyframes testim-scale {
+            0% {
+                -webkit-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -webkit-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -webkit-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -webkit-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-moz-keyframes testim-scale {
+            0% {
+                -moz-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -moz-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -moz-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -moz-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-ms-keyframes testim-scale {
+            0% {
+                -ms-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -ms-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -ms-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -ms-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-o-keyframes testim-scale {
+            0% {
+                -o-box-shadow: 0px 0px 0px 0px #eee;
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                -o-box-shadow: 0px 0px 10px 5px #eee;
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                -o-box-shadow: 0px 0px 10px 5px #ea830e;
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                -o-box-shadow: 0px 0px 0px 0px #ea830e;
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @keyframes testim-scale {
+            0% {
+                box-shadow: 0px 0px 0px 0px #eee;
+            }
+
+            35% {
+                box-shadow: 0px 0px 10px 5px #eee;
+            }
+
+            70% {
+                box-shadow: 0px 0px 10px 5px #ea830e;
+            }
+
+            100% {
+                box-shadow: 0px 0px 0px 0px #ea830e;
+            }
+        }
+
+        @-webkit-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @-moz-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -moz-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -moz-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @-ms-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -ms-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @-o-keyframes testim-content-in {
+            from {
+                opacity: 0;
+                -o-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                -o-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes testim-content-in {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @-webkit-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @-moz-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -moz-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                -moz-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @-ms-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -ms-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @-o-keyframes testim-content-out {
+            from {
+                opacity: 1;
+                -o-transform: translateY(0);
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(-100%);
+                transform: translateY(-100%);
+            }
+        }
+
+        @keyframes testim-content-out {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+        }
+
+        @-webkit-keyframes testim-show {
+            from {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @-moz-keyframes testim-show {
+            from {
+                opacity: 0;
+                -moz-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -moz-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @-ms-keyframes testim-show {
+            from {
+                opacity: 0;
+                -ms-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @-o-keyframes testim-show {
+            from {
+                opacity: 0;
+                -o-transform: scale(0);
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes testim-show {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @-moz-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -moz-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -moz-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @-ms-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -ms-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @-o-keyframes testim-hide {
+            from {
+                opacity: 1;
+                -o-transform: scale(1);
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                -o-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @keyframes testim-hide {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+        @media all and (max-width: 300px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            .testim .arrow {
+                font-size: 1.5em;
+            }
+
+            .testim .cont div p {
+                line-height: 25px;
+            }
+
+        }
+
+        .container h1::after {
+            content: '';
+            /* background: #303ef7; */
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .service {
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            transition: transform 0.5s, background 0.5s;
+        }
+
+        .service i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #303ef7;
+        }
+
+        .service h2 {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .service:hover {
+            background: #9ef09f;
+            /* background: #303ef7; */
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .service:hover i {
+            color: #fff;
+        }
+
+        .service:hover h2 {
+            color: #11401c;
+        }
+
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #d9d9d9;
+            /* padding-left: 0; */
+            padding-right: 0;
+            border-radius: 0;
+            padding-left: 15px;
+            background: transparent;
+        }
+
+        .form-control:active,
+        .form-control:focus {
+            outline: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-color: #000;
+        }
+
+        .btn,
+        .form-control {
+            /* height: 55px; */
+            height: 44px;
+        }
+
+        form.border-right {
+            padding-right: 6rem !important;
+        }
+
+        @media (max-width: 991.98px) {
+            form.border-right {
+                padding-right: 0 !important;
+                border-right: none !important;
+            }
+        }
+
+        label.error {
+            font-size: 12px;
+            color: red;
+        }
+
+        #message {
+            resize: vertical;
+        }
+
+        #form-message-warning,
+        #form-message-success {
+            display: none;
+        }
+
+        #form-message-warning {
+            color: #B90B0B;
+        }
+
+        #form-message-success {
+            color: #55A44E;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .submitting {
+            float: left;
+            width: 100%;
+            padding: 10px 0;
+            display: none;
+            font-weight: bold;
+            font-size: 12px;
+            color: #000;
+        }
+
+        .single-banner-slide {
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 2;
+        }
+
+        .single-banner-slide span {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .single-banner-slide h2 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 60px;
+        }
+
+        .single-banner-slide::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .single-banner-slide p {
+            color: #fff;
+            font-size: 15px;
+            max-width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .single-banner-slide a {
+            color: #000;
+            background: #fff;
+            padding: 10px 45px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+
+        .single-banner-slide a:hover {
+            color: #fff;
+            background: #000;
+        }
+
+        .owl-dots {
+            display: none !important;
+        }
+
+        .buttons {
+            display: flex;
+
+            button {
+                padding: 0 25px;
+                border-radius: 4px;
+                min-width: 140px;
+                height: 50px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 10px;
+                position: relative;
+                overflow: hidden;
+                border: solid 1px #11401c;
+                cursor: pointer;
+
+                &:after,
+                &:before {
+                    width: 0%;
+                    height: 0%;
+                    content: "";
+                    position: absolute;
+                    border-radius: 100%;
+                }
+
+                &:after {
+                    transition: all 0.5s ease;
+                    background-color: white;
+                }
+
+                &:before {
+                    transition: all 0.5s ease-out;
+                    background: #7de1c2;
+                }
+
+                span {
+                    z-index: 1;
+                    transition: all 0.3s ease-out;
+                }
+
+                &.cta-01 {
+                    background: linear-gradient(90deg, #11401c 0%, #11401c 100%);
+                    color: white;
+
+                    &:after {
+                        background: linear-gradient(90deg, #11401c 0%, #11401c 100%);
+                        color: #000 !important;
+                    }
+                }
+
+                &.cta-02 {
+                    background-color: transparent;
+                    color: #69cec2;
+
+                    &:after {
+                        background: linear-gradient(90deg, #11401c 0%, #11401c 100%);
+                    }
+                }
+
+                &:hover {
+                    &.cta-01 {
+                        color: #69cec2 !important;
+                    }
+
+                    &.cta-02 {
+                        color: white;
+                    }
+
+                    &:after,
+                    &:before {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 4px;
+                    }
+
+                    &:after {
+                        transition: all 0.7s ease-in;
+                    }
+
+                    &:before {
+                        transition: all 0.5s ease-in;
+                    }
+                }
+            }
+        }
+
+        .learning_part .learning_img {
+            /* background-image: url(../img/learning_img_bg_1.png); */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-size: 66% 100%; */
+            background-position: left top;
+            position: absolute;
+            left: -85px;
+            bottom: 128px;
+            margin-left: -197px;
+            padding: -18px -8px;
+        }
+
+        /* .learning_img{
+            background-image: url('./img/kids-1/LCP_Symbols\ \(1\).png');
+        } */
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+
+
+
+        .form-popup-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .form-popup-bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(94, 110, 141, 0.9);
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            overflow-y: auto;
+            z-index: 10000;
+        }
+
+        .form-popup-bg.is-visible {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+            -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+            transition: opacity 0.3s 0s, visibility 0s 0s;
+        }
+
+        .form-container {
+            background-color: #2d3638;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            padding: 40px;
+            color: #fff;
+        }
+
+        .close-button {
+            background: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: solid 1px #fff;
+        }
+
+        .form-popup-bg:before {
+            content: '';
+            background-color: #fff;
+            opacity: .25;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .mc-field-group .dropdown {
+            margin: 0em auto;
+            width: 16.5em;
+            height: 45px;
+            border: .1em solid #5a5757;
+        }
+
+        .mc-field-group ul {
+            display: none;
+            border-top: .2em solid #c0cdd1;
+            background: white;
+            border: 1px solid #000;
+            margin: -313px 0;
+            width: 264px;
+
+            /* display: none;
+            border-top: .2em solid #c0cdd1;
+            background: white;
+            border: 1px solid #000;
+            margin: 21px 0; */
+            /* background: white;
+    margin: 21px 0;
+    border: 1px solid #000; */
+        }
+
+        .mc-field-group li {
+            padding: .5em;
+            cursor: pointer;
+            @extend %transition;
+
+            &:not(:first-child) {
+                border-top: .1em dashed #dde4e6;
+            }
+
+            &:last-child {
+                color: #ad0000;
+            }
+
+            &:focus,
+            &:hover {
+                background: #ecf0f1;
+            }
+
+            &:active {
+                background: #fbfcfc;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .program-text {
+                margin: 0 !important;
+                position: relative;
+                /* left: 35px; */
+                left: 91px;
+                top: -27px;
+            }
+
+            .title-1 {
+                position: relative !important;
+                /* left: 74px; */
+                left: 50px;
+            }
+
+            .banner-h2 {}
+        }
+
+        @media (min-width: 579px) and (max-width: 1280px) {
+            .img4 {
+                display: none;
+            }
+
+            .img5 {
+                display: none
+            }
+
+            /* .d-lg-block .btn_1{
+                display: none;
+            } */
+        }
+
+        /* @media (min-width: 1200px) and (max-width: 1400px){
+            .d-lg-block .btn_1{
+                display: none !important;
+            }
+        } */
+        @media (min-width: 1024px) and (max-width: 1800px) {
+            .img4 {
+                display: none;
+            }
+
+            .img5 {
+                display: none
+            }
+        }
+
+        @media (min-width: 1903px) and (max-width: 2500px) {
+            .delayedPopupWindow {}
+        }
+
+        
+    </style>
+    <script>
+        $(function () {
+            var list = $('.js-dropdown-list');
+            var link = $('.js-link');
+            link.click(function (e) {
+                e.preventDefault();
+                list.slideToggle(200);
+            });
+            list.find('li').click(function () {
+                var text = $(this).html();
+                var icon = '<i class="fa fa-chevron-down"></i>';
+                link.html(text + icon);
+                list.slideToggle(200);
+                if (text === '* Reset') {
+                    link.html('Select one option' + icon);
+                }
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./img/kids-1/logo-1.jpg" style="height: 61px;
+                            width: 205px;" />
+
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html" style="font-size: 18px;
+                                    font-weight: 500;">Home</a>
+                                </li>
+                                <div class="nav-item dropdown">
+                                    <a href="JavaScript:void(0)" class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown" style="font-size: 18px;
+                                    font-weight: 500;color: rgb(18 17 20 / 80%);">About</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a href="mission.html" class="dropdown-item">About Us</a>
+                                        <!-- <a href="vision.html" class="dropdown-item">Vision</a> -->
+                                        <a href="managment.html" class="dropdown-item">Board of Directors</a>
+                                        <a href="keyfeatures.html" class="dropdown-item">Key Features</a>
+
+                                    </div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="curriculum.html" style="font-size: 18px;
+                                    font-weight: 500;">Curriculum</a>
+                                </li>
+                                <div class="nav-item dropdown">
+                                    <a href="JavaScript:void(0)" class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown" style="font-size: 18px;
+                                    font-weight: 500;color: rgb(18 17 20 / 80%);">Programs</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a href="toddler.html" class="dropdown-item">PlayGroup</a>
+                                        <a href="nursery.html" class="dropdown-item">Nursery</a>
+                                        <a href="pp1.html" class="dropdown-item">PP-I</a>
+                                        <a href="pp2.html" class="dropdown-item">PP-II</a>
+                                        <a href="daycare.html" class="dropdown-item">Daycare</a>
+                                        <a href="activity.html" class="dropdown-item">Activity Center</a>
+
+                                    </div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="schools.html" style="font-size: 18px;
+                                    font-weight: 500;">Our Schools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="career.html" style="font-size: 18px;
+                                    font-weight: 500;">Careers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" style="font-size: 18px;
+                                    font-weight: 500;">Contact Us</a>
+                                </li>
+
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" id="btnOpenForm" href="#testim" style="font-size: 18px;
+                                    font-weight: 500;">Enroll Now</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="form-popup-bg">
+        <div class="form-container">
+            <button id="btnCloseForm" class="close-button">X</button>
+            <h1 style="color: white;">Contact Us</h1>
+            <p style="color: white;">For more information. Please complete this form.</p>
+            <br>
+            <form action="" class=" pr-5 mb-5" method="post" id="contactForm" name="submit-to-google-sheet">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <textarea class="form-control" name="message" id="message" cols="10" rows="3"
+                            placeholder="Write your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="submit" value="Send Message" style="color: #11401c;
+                                                background-color: #9ef09f;
+                                                border-color: #9ef09f;" class="btn btn-primary rounded-0 py-2 px-4">
+                        <span class="submitting"></span>
+                    </div>
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        function closeForm() {
+            $('.form-popup-bg').removeClass('is-visible');
+        }
+
+        $(document).ready(function ($) {
+
+            /* Contact Form Interactions */
+            $('#btnOpenForm').on('click', function (event) {
+                event.preventDefault();
+
+                $('.form-popup-bg').addClass('is-visible');
+            });
+
+            //close popup when clicking x or off popup
+            $('.form-popup-bg').on('click', function (event) {
+                if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+                    event.preventDefault();
+                    $(this).removeClass('is-visible');
+                }
+            });
+
+
+
+        });
+
+    </script>
+    <!-- Header part end-->
+
+
+    <div id="bkgOverlay" class="backgroundOverlay"></div>
+
+    <div id="delayedPopup" class="delayedPopupWindow">
+        <!-- This is the close button -->
+        <a href="#" id="btnClose" title="Click here to close this deal box." style="font-size: 19px;
+        color: #155b3a;">X</a>
+        <!-- This is the left side of the popup for the description -->
+        <h4 style="font-family: Dk cover up;
+        color: #ec0667;
+        font-size: 20px;">Nurture your child’s potential at Little Caterpillars
+
+        </h4>
+        <h6>Admissions open for 2024 - 2025</h6>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form
+                action="https://script.google.com/macros/s/AKfycbzfbfytJvtkhoeYS8XW5DRDmPHiZ6oRXR9afPMR-OIqpSAWdXt6Rq6dGolc8cPenpU/exec"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate="">
+                <div class="mc-field-group">
+                    <label for="mce-FNAME">Name
+                        <span class="asterisk">*</span>
+                    </label>
+                    <input type="text" value="" class="" name="name" id="name">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">Email
+                        <span class="asterisk">*</span>
+                    </label>
+                    <input type="text" value="" class="" name="email" id="email">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">Phone Number
+                        <span class="asterisk">*</span>
+                    </label>
+                    <input type="text" value="" class="" name="phone" id="phone">
+                </div>
+                <div class="mc-field-group">
+                    <label for="mce-LNAME">Select Program
+                        <span class="asterisk">*</span>
+                    </label>
+                    <div class="dropdown">
+                        <a href="#" class="js-link" name="program" id="program" style="position: relative;
+                        top: 10px;
+                        left: 10px;color: #000;">Select Program <i class="fa fa-chevron-down"
+                                style="margin: 0 61px;"></i></a>
+                        <ul class="js-dropdown-list" name="program" id="program">
+                            <li type="text" name="program" id="program">PlayGroup</li>
+                            <li type="text" name="program" id="program">Nursery</li>
+                            <li type="text" name="program" id="program">PP1</li>
+                            <li type="text" name="program" id="program">PP2</li>
+                            <li type="text" name="program" id="program">Daycare</li>
+                            <li type="text" name="program" id="program">Activity Center</li>
+                            <li>* Reset</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="mc-field-group">
+                    <label for="mce-LNAME">Message
+                        <span class="asterisk">*</span>
+                    </label>
+                    <textarea placeholder="Type your Message Here...." tabindex="10" name="message" id="message"
+                        required style="width: 248px;
+                    height: 110px;"></textarea>
+                </div> -->
+
+
+
+                <div class="clear">
+                    <button class="button" type="submit" style="    margin: 28px 0;">Send</button>
+                </div>
+                <script>
+                    const scripturl = 'https://script.google.com/macros/s/AKfycbzfbfytJvtkhoeYS8XW5DRDmPHiZ6oRXR9afPMR-OIqpSAWdXt6Rq6dGolc8cPenpU/exec'
+                    const Form = document.forms['mc-embedded-subscribe-form']
+
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(Form) })
+                            .then(response =>
+                                alert('Success!')
+                            )
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
+
+            </form>
+
+
+        </div>
+        <!-- End MailChimp Signup Form -->
+    </div>
+    <script>
+        $(document).ready(function () {
+            //Fade in delay for the background overlay (control timing here)
+            $("#bkgOverlay").delay(4800).fadeIn(400);
+            //Fade in delay for the popup (control timing here)
+            $("#delayedPopup").delay(5000).fadeIn(400);
+
+            //Hide dialouge and background when the user clicks the close button
+            $("#btnClose").click(function (e) {
+                HideDialog();
+                e.preventDefault();
+            });
+        });
+        //Controls how the modal popup is closed with the close button
+        function HideDialog() {
+            $("#bkgOverlay").fadeOut(400);
+            $("#delayedPopup").fadeOut(300);
+        }
+
+
+
+
+    </script>
+
+    <!-- banner part start-->
+    <section class="banner-area">
+        <div class="">
+            <div class="all-banner-slide owl-carousel">
+                <div class="single-banner-slide"
+                    style="background-image: linear-gradient(to bottom, rgb(17 17 18 / 0%), rgb(0 0 0 / 0%)), url(./img/kids-1/Home\ Banner\ 1.png);">
+                    <div class="center" style="text-align: center;">
+                        <!-- <span>Discover The Colorful World</span><br> -->
+                        <h2 class="banner-h2" style="font-size: 35px;">
+                            Welcome to Little Caterpillars!
+                        </h2>
+                        <p class="center-text" style="max-width: 75%;">
+                            A unique learning center with various curricular & extracurricular activities
+                            for children under one roof.
+                        </p>
+                        <br><br>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="cta-01" id="btnOpenForms"><span>Enroll Now</span></button>
+                        <!-- <button class="cta-02"><span>Learn More</span></button> -->
+                    </div>
+
+
+                </div>
+                <div class="single-banner-slide"
+                    style="background-image: linear-gradient(to bottom, rgb(17 17 18 / 59%), rgb(0 0 0 / 63%)), url(./img/kids-1/Banner\ 3-1.png);">
+                    <div class="center" style="text-align: center;">
+                        <!-- <span>Discover The Colorful World</span><br> -->
+                        <h2 class="banner-h2" style="font-size: 35px;">
+                            Welcome to Little Caterpillars!
+                        </h2>
+                        <p class="center-text" style="max-width: 75%;">
+                            A unique learning center with various curricular & extracurricular activities
+                            for children under one roof.
+                        </p>
+                        <br><br>
+                    </div>
+                    <br><br>
+                    <div class="buttons">
+                        <button class="cta-01" style="margin: -46px 0;"><span>Enroll Now</span></button>
+                        <!-- <button class="cta-02"><span>Learn More</span></button> -->
+                    </div>
+                </div>
+                <div class="single-banner-slide"
+                    style="background-image: linear-gradient(to bottom, rgb(17 17 18 / 59%), rgb(0 0 0 / 63%)), url(./img/kids-1/Banner\ 4.png);">
+                    <div class="center" style="text-align: center;">
+                        <!-- <span>Discover The Colorful World</span><br> -->
+                        <h2 class="banner-h2" style="font-size: 35px;">
+                            Welcome to Little Caterpillars!
+                        </h2>
+                        <p class="center-text" style="max-width: 75%;">
+                            A unique learning center with various curricular & extracurricular activities
+                            for children under one roof.
+                        </p>
+                        <br><br>
+                    </div>
+                    <br><br>
+                    <div class="buttons">
+                        <button class="cta-01" style="margin: -46px 0;"><span>Enroll Now</span></button>
+                        <!-- <button class="cta-02"><span>Learn More</span></button> -->
+                    </div>
+                </div>
+
+
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+            <script>
+                //Owl Carousel
+                $(".all-banner-slide").owlCarousel({
+                    items: 1,
+                    smartSpeed: 1000,
+                    autoplay: true,
+                    lazyLoad: true,
+                    dots: true,
+                    loop: true,
+                    autoplayTimeout: 3000
+                });
+
+            </script>
+        </div>
+        <div class="form-popup-bg">
+            <div class="form-container">
+                <button id="btnCloseForm" class="close-button">X</button>
+                <h1 style="color: white;">Contact Us</h1>
+                <p style="color: white;">For more information. Please complete this form.</p>
+                <br>
+                <form action="" class=" pr-5 mb-5" method="post" id="contactForm" name="submit-to-google-sheet">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <textarea class="form-control" name="message" id="message" cols="10" rows="3"
+                                placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="submit" value="Send Message" style="color: #11401c;
+                                                    background-color: #9ef09f;
+                                                    border-color: #9ef09f;"
+                                class="btn btn-primary rounded-0 py-2 px-4">
+                            <span class="submitting"></span>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+        </div>
+        <script>
+            function closeForm() {
+                $('.form-popup-bg').removeClass('is-visible');
+            }
+
+            $(document).ready(function ($) {
+
+                /* Contact Form Interactions */
+                $('#btnOpenForms').on('click', function (event) {
+                    event.preventDefault();
+
+                    $('.form-popup-bg').addClass('is-visible');
+                });
+
+                //close popup when clicking x or off popup
+                $('.form-popup-bg').on('click', function (event) {
+                    if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+                        event.preventDefault();
+                        $(this).removeClass('is-visible');
+                    }
+                });
+
+
+
+            });
+        </script>
+    </section>
+    <!-- <section class="banner_part" style="
+    background-image: linear-gradient(to bottom, rgb(17 17 18 / 59%), rgb(0 0 0 / 63%)), url(./img/kids-1/banner-img-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-6 col-lg-12">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h1 style="color: white;">Welcome to Little Caterpillars!</h1>
+                            <p>A unique learning center with various curricular & extracurricular activities
+                                for children under one roof.</p>
+                            <a href="#" class="btn_1" style="font-size: 18px;
+                            font-weight: 500;">Learn More </a>
+                            <a href="#" class="btn_2" style="font-size: 18px;
+                            font-weight: 500;">Enroll Now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- banner part start-->
+
+    <section class="advance_feature learning_part" style="margin: 112px 0;">
+        <img src="./img/icon/butterfly.png" class="img1" style="height: 284px !important;
+        position: absolute;
+        left: 1635px;
+        width: 312px;
+        top: -60px;
+        ">
+        <div class="container">
+            <img class="loading" src="./img/icon/hands.png" style="height: 201px;
+            position: absolute;
+            left: 489px;
+            top: -55px;">
+            <div class="row align-items-sm-center align-items-xl-stretch">
+                <div class="col-md-6 col-lg-6">
+                    <div class="learning_member_text">
+                        <!-- <h5>Programs</h5> -->
+                        <h2>Our Programs</h2>
+                        <p style="margin-top: -23px !important;">Explore our diverse range of programs tailored for
+                            different age groups.</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row " style="margin: 49px 0 !important;">
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="">
+
+                        <a href="toddler.html"><img src="./img/kids-1/Play Group.png" style="    width: 531px;"></a>
+
+                    </div>
+                    <br>
+                    <div class="">
+                        <a href="toddler.html"><h3 class="title-1" style="text-align: center;
+                            margin-left: -89px;
+                        font-size: 42px;
+                        font-weight: 400;
+                        line-height: 1.1;
+                        margin-bottom: 38px;
+                        position: relative;
+                        margin-top: 19px;
+                        font-family: Dk cover up;">PlayGroup</h3>
+                        <p class="program-text" style="margin: -27px 170px;
+                        font-size: 18px;
+                        font-weight: 500;">Age Criteria : 2-3 years</p></a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="">
+
+                        <a href="nursery.html"><img src="./img/kids-1/Nursery.png" style="    width: 531px;"></a>
+
+                    </div>
+                    <br>
+                    <div class="">
+                        <a href="nursery.html"><h3 class="title-1" style="text-align: center;
+                           margin-left: -89px;
+                        font-size: 42px;
+                        font-weight: 400;
+                        line-height: 1.1;
+                        margin-bottom: 38px;
+                        position: relative;
+                        margin-top: 19px;
+                        font-family: Dk cover up;">Nursery</h3>
+                        <p class="program-text" style="margin: -27px 170px;
+                        font-size: 18px;
+                        font-weight: 500;">Age Criteria : 3-4 years</p></a>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <br>
+            <div class="row " style="margin: 49px 0 !important;">
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="">
+
+                        <a href="pp1.html"><img src="./img/kids-1/PP-1.png" style="    width: 531px;"></a>
+
+                    </div>
+                    <br>
+                    <div class="">
+                        <a href="pp1.html"><h3 class="title-1" style="text-align: center;
+                            margin-left: -89px;
+                        font-size: 42px;
+                        font-weight: 400;
+                        line-height: 1.1;
+                        margin-bottom: 38px;
+                        position: relative;
+                        margin-top: 19px;
+                        font-family: Dk cover up;">PP-I</h3>
+                        <p class="program-text" style="margin: -27px 170px;
+                        font-size: 18px;
+                        font-weight: 500;">Age Criteria : 4-5 years</p></a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div class="">
+
+                        <a href="pp2.html"><img src="./img/kids-1/PP-2.png" style="    width: 531px;"></a>
+
+                    </div>
+                    <br>
+                    <div class="">
+                        <a href="pp2.html"><h3 class="title-1" style="text-align: center;
+                            margin-left: -89px;
+                        font-size: 42px;
+                        font-weight: 400;
+                        line-height: 1.1;
+                        margin-bottom: 38px;
+                        position: relative;
+                        margin-top: 19px;
+                        font-family: Dk cover up;">PP-II</h3>
+                        <p class="program-text" style="margin: -27px 170px;
+                        font-size: 18px;
+                        font-weight: 500;">Age Criteria : 5-6 years</p></a>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- <div class="row pgrm-row" style="margin: 49px 0 !important;">
+
+                <div class="col-sm-6 col-xl-3 align-self-center">
+                    <div class="card">
+                        <div class="image">
+
+                            <img src="./img/little-imgs/IMG_4446.jpg" alt="Card Image">
+
+                        </div>
+                        <div class="content">
+                            <h3 class="title">PlayGroup</h3>
+                            <p class="description">Age Criteria : 2-3 years</p>
+                            <p>
+                                we prioritize energetic free play and peer interaction, fostering language skills,
+                                socialization, and empathy. Our focus on fine motor skills includes activities like
+                                scribbling and building blocks.
+                            </p>
+                            <br>
+                            <a class="cta-arrow" href="toddler.html" aria-label="Learn more" style="font-size: 16px !important;
+                            font-weight: 600;">
+                                Know more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="card">
+                        <div class="image">
+
+                            <img src="./img/little-imgs/IMG_4386.jpg" alt="Card Image">
+
+                        </div>
+                        <div class="content">
+                            <h3 class="title">Nursery</h3>
+                            <p class="description">Age Criteria : 3-4 years</p>
+                            <p>
+                                We foster holistic development in young learners through hands-on experiences with
+                                natural phenomena, diverse extracurricular activities, and a supportive environment that
+                                nurtures curiosity and self-esteem.
+                            </p>
+                            <br>
+                            <a class="cta-arrow" href="nursery.html" aria-label="Learn more" style="font-size: 16px !important;
+                            font-weight: 600;">
+                                Know more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="card">
+                        <div class="image">
+
+                            <img src="./img/little-imgs/IMG_4372.jpg" alt="Card Image">
+
+
+                        </div>
+                        <div class="content">
+                            <h3 class="title">PP1</h3>
+                            <p class="description">Age Criteria : 4-5 years</p>
+                            <p>
+                                Students explore monthly environmental themes, while kindergarteners focus on
+                                activity-based learning and linguistic enrichment. Our curriculum emphasizes
+                                responsibility, leadership.
+                            </p>
+                            <br>
+                            <a class="cta-arrow" href="pp1.html" aria-label="Learn more" style="font-size: 16px !important;
+                            font-weight: 600;">
+                                Know more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="card">
+                        <div class="image">
+                            <img src="./img/little-imgs/IMG_4367.jpg" alt="Card Image">
+
+                        </div>
+                        <div class="content">
+                            <h3 class="title">PP2</h3>
+                            <p class="description">Age Criteria : 5-6 years</p>
+                            <p>
+                                learning to deepen awareness of societal issues, advance literacy and numeracy skills,
+                                and participate in a diverse range of extracurricular activities. They also take on
+                                mentorship roles, responsible behavior.
+                            </p>
+                            <br>
+                            <a class="cta-arrow" href="pp2.html" aria-label="Learn more" style="font-size: 16px !important;
+                            font-weight: 600;">
+                                Know more
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> -->
+
+        </div>
+    </section>
+
+    <section class="advance_feature learning_part advance" style="margin: -116px 0 !important;">
+        <div class="container">
+            <img class="loading" src="./img/icon/hands.png" style="    height: 185px;
+            position: absolute;
+            left: 1029px;
+            top: -62px;
+        ">
+            <!-- <img src="./img/icon/row.png"> -->
+            <div class="section_tittle text-center">
+                <h2>Our Facilities</h2>
+            </div>
+            <img src="./img/icon/star.png" style="position: absolute;
+    left: 1715px;
+    top: 289px;
+    height: 134px;
+    border-radius: 50%;
+    ">
+
+            <div class="row" style="display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;">
+                <img src="./img/icon/sun.png" style="position: absolute;
+            left: -100px;
+            height: 287px;
+            top: 13px;
+           
+            border-radius: 50%;">
+                <div class="service">
+                    <div class="icon" style="background: #8ac737;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/kids-1/icons8-cctv-50.png" style="margin: 0px 0;
+                        height: 44px;">
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Live CCTV Streaming for Parents</h2>
+                    <!-- <p style="font-size: 13px;">
+                        CCTV Access given to the Parents
+                    </p> -->
+                </div>
+                <div class="service">
+                    <div class="icon" style="background: #c019bd;;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/kids-1/icons8-children-80.png" style="margin: 0px 0;
+                        height: 44px;">
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Huge Indoor and Outdoor Play Areas </h2>
+                    <!-- <p style="font-size: 13px;">
+                        Excellent learning environment with radiant classrooms and outdoor play equipment
+                    </p> -->
+                </div>
+                <div class="service">
+                    <div class="icon" style="background: #e88a3c;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/kids-1/icons8-protect-50.png" style="margin: 0px 0;
+                        height: 44px;">
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Safe and Nurturing Environment</h2>
+                    <!-- <p style="font-size: 13px;">
+                        Safety of children is the first priority
+                    </p> -->
+
+                </div>
+                <div class="service">
+                    <div class="icon" style="background: #8b17cd;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/kids-1/icons8-teacher-80.png" style="margin: 0px 0;
+                        height: 44px;">
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Low Teacher Student Ratio</h2>
+                    <!-- <p style="font-size: 13px;">
+                        Wonderful, kind and experienced teachers
+                        Caring and patient sub-staff
+                        Cordial administration staff
+
+                    </p> -->
+                </div>
+                <div class="service">
+                    <div class="icon" style="background: #20bfc6;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/kids-1/app.png" style="margin: 0px 0;
+                        height: 44px;">
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Seamless Parental Communication App</h2>
+                    <!-- <p style="font-size: 13px;">
+                        Wonderful, kind and experienced teachers
+                        Caring and patient sub-staff
+                        Cordial administration staff
+
+                    </p> -->
+                </div>
+                <div class="service">
+                    <div class="icon" style="background: #17838d;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/kids-1/icons8-gps-50.png" style="margin: -5px 0;
+                        height: 44px;">
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Gps Enabled bus Tracking Facility</h2>
+                    <!-- <p style="font-size: 13px;">
+                        Wonderful, kind and experienced teachers
+                        Caring and patient sub-staff
+                        Cordial administration staff
+
+                    </p> -->
+                </div>
+                <div class="service">
+                    <div class="icon" style="background: #a13799;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/kids-1/icons8-meals-50.png" style="margin: 0px 0;
+                        height: 44px;">
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Healthy and Nutritious Meals</h2>
+
+                </div>
+                <div class="service">
+                    <div class="icon" style="background: #4da980;margin: 0 auto 15px auto;
+                    padding-top: 12px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    width: 66px;
+    height: 66px;">
+                        <img src="./img/icon/icons8-playground-64 (1).png" style="margin: 0px 0;
+     height: 44px;">
+                        <!-- <img src="./img/icon/icons8-football-50.png" style="margin: 0px 0;
+                        height: 44px;"> -->
+                    </div>
+                    <h2 style="font-weight: 600;
+                    font-size: 18px !important;
+                    margin-bottom: 8px;">Events and Extracurricular Activities</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- learning part start-->
+    <section class="learning_part" style="margin: 91px 0;
+    margin-bottom: -85px !important;">
+        <div class="container">
+
+            <div class="row align-items-sm-center align-items-lg-stretch">
+                <div class="col-md-7 col-lg-7">
+                    <div class="learning_img">
+                        <img src="img/kids-1/Untitled design.png" alt="" style="
+                        margin: -145px 0;">
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <div class="learning_member_text learning-text learning-img">
+                        <!-- <h5>Why Choose us?</h5> -->
+                        <h2>Why Choose Little Caterpillars?</h2>
+                        <div class="services section-bg" id="services">
+                            <div class="container">
+                                <ul class="asterisk">
+                                    <li style="list-style: circle !important;">
+                                        <h4 class="title "><a href="" style="text-decoration: none;"><span
+                                                    class="asterisks">*</span>Comprehensive
+                                                Child Centric Approach</a>
+                                        </h4>
+                                    </li>
+                                    <li style="list-style: circle !important;">
+                                        <h4 class="title"><a href="" style="text-decoration: none;"><span
+                                                    class="asterisks">*</span>Tailored Learning
+                                                Experience</a>
+                                        </h4>
+                                    </li>
+                                    <li style="list-style: circle !important;">
+                                        <h4 class="title"><a href="" style="text-decoration: none;"><span
+                                                    class="asterisks">*</span>Innovative and
+                                                Engaging Curriculum</a>
+                                        </h4>
+                                    </li>
+                                    <li style="list-style: circle !important;">
+                                        <h4 class="title"><a href="" style="text-decoration: none;"><span
+                                                    class="asterisks">*</span>Qualified and
+                                                Passionate Educators</a>
+                                        </h4>
+                                    </li>
+                                    <li style="list-style: circle !important;">
+                                        <h4 class="title"><a href="" style="text-decoration: none;"><span
+                                                    class="asterisks">*</span>Strong Focus on
+                                                Emotional Intelligence and Social Skills </a>
+                                        </h4>
+                                    </li>
+                                    <li style="list-style: circle !important;">
+                                        <h4 class="title"><a href="" style="text-decoration: none;"><span
+                                                    class="asterisks">*</span>Parental
+                                                Involvement and Communication </a>
+                                        </h4>
+                                    </li>
+                                </ul>
+                                <!-- <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="box">
+                                            <div class="icon" style="background: #3f9352;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="white" class="bi bi-book" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                                                </svg>
+                                            </div>
+
+                                            <h4 class="title"><a href="" style="text-decoration: none;">Comprehensive
+                                                    Curriculum</a>
+                                            </h4>
+
+                                            <p class="description">Our Curriculum is designed to faster growth and
+                                                creativity in
+                                                young children</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="box">
+                                            <div class="icon" style="background: #3f9352;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="white" class="bi bi-people" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                                                </svg>
+                                            </div>
+
+                                            <h4 class="title"><a href="" style="text-decoration: none;">Experienced
+                                                    Educators</a>
+                                            </h4>
+
+                                            <p class="description">Our team of certified teachers is dedicated to
+                                                providing the best
+                                                learning experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="box">
+                                            <div class="icon" style="background: #3f9352;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                    fill="white" class="bi bi-shield-check" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                                                    <path
+                                                        d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                                                </svg>
+                                            </div>
+
+                                            <h4 class="title"><a href="" style="text-decoration: none;">Safe & Fun
+                                                    Environment</a>
+                                            </h4>
+
+                                            <p class="description">Safty and enjoyment are at the heart of our
+                                                preschool, ensuring a
+                                                memorable time for all.</p>
+                                        </div>
+                                    </div>
+
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <img src="./img/icon/row.png" class="img2" style=" height: 279px;
+                position: absolute;
+                left: 1649px;
+                top: 208px;
+                
+                border-radius: 36%;">
+            </div>
+        </div>
+    </section>
+    <!-- learning part end-->
+
+
+    <section id="testim" class="testim tsm-1 testimonial_part"
+        style="margin-top: 243px !important;background-color: #acf4ac1c;background-image: linear-gradient(to bottom, rgb(245 246 252 / 8%), rgb(162 244 163 / 1%)), url(./img/kids-1/contact\ form.png);background-repeat: no-repeat;background-size: cover;filter: brightness(2);">
+        <div class="cover" style="margin-top: 39px;">
+            <!-- <div class="section_tittle text-center">
+                <h2 style="color: #ffff;">Testimonials</h2>
+            </div> -->
+            <!-- <h6 style="text-align: center;
+            font-size: 18px !important;
+            margin-top: -32px !important;color: #ffff;">Hear from our Parents!</h6> -->
+            <div class="content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 mb-5 col-lg-12 mb-lg-0">
+                                    <h2 class="mb-5" style="color: white;font-family: DK cover up;
+                                    font-weight: 400;
+                                    font-size: 42px;">Contact Us</h2>
+                                    <form
+                                        action="https://script.google.com/macros/s/AKfycbwdiCKhGoD_E-B7fIUyF5QrwB3AYatAOuHH0zCposNPmoKU8cCAvX-uyWyorHux_DPE/exec"
+                                        class="border-right pr-5 mb-5" method="post" id="contactForm"
+                                        name="submit-to-google-sheet">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="name" id="name"
+                                                    placeholder="Name">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <input type="text" class="form-control" name="phone" id="phone"
+                                                    placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <input type="text" class="form-control" name="email" id="email"
+                                                    placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 form-group">
+                                                <textarea class="form-control" name="message" id="message" cols="10"
+                                                    rows="3" placeholder="Write your message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="submit" value="Send Message" style="    color: #d2d4d2;
+                                                background-color: #033e03;
+                                                border-color: #063f06;" class="btn btn-primary rounded-0 py-2 px-4">
+                                                <span class="submitting"></span>
+                                            </div>
+                                        </div>
+                                        <script>
+                                            const scriptURL = 'https://script.google.com/macros/s/AKfycbwdiCKhGoD_E-B7fIUyF5QrwB3AYatAOuHH0zCposNPmoKU8cCAvX-uyWyorHux_DPE/exec'
+                                            const form = document.forms['submit-to-google-sheet']
+
+                                            form.addEventListener('submit', e => {
+                                                e.preventDefault()
+                                                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                                                    .then(response =>
+                                                        alert('Success!')
+                                                    )
+                                                    .catch(error => console.error('Error!', error.message))
+                                            })
+                                        </script>
+
+                                    </form>
+
+                                </div>
+                                <!-- <div class="col-lg-4 ml-auto">
+                                    <h3 class="mb-4" style="color: white;">Feel Free to Ask Anything!.</h3>
+                                    <p style="color: #ffffff8a;">If you have any Questions related our Programs or
+                                        curriculam please feel free to ask.</p>
+
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="news-letter advance_feature news_sec" id="News-letter" style="    margin-top: -147px !important;">
+        <div class="news ">
+            <div class="container">
+                <img src="./img/icon/hands.png" class="img3" style="border-radius: 50%;
+                height: 227px;
+                position: absolute;
+                left: -33px;
+                
+            ">
+                <div class="section_tittle text-center">
+                    <h2>Admissions Open For AY 2024 - 2025</h2>
+                </div>
+                <!-- <p class="des how-de" style="margin: -36px 0 !important;">
+                    Subscribe to our newsLetter for the latest Updates and news</p> -->
+
+                <form action="">
+                    <!-- <input type="email" maxlength="50" required placeholder="Enter your email address">
+                    <button class="bt">Subscribe</button> -->
+                    <li class="d-lg-block">
+                        <a class="btn_1" id="btnOpenForm" href="contact.html" style="font-size: 18px;
+                        font-weight: 500;">Enroll Now</a>
+                    </li>
+
+                </form>
+                <img src="./img/icon/sun.png" class="img5" style="height: 168px;
+                position: absolute;
+                left: 630px;
+                z-index: 2;
+                margin: -86px -9px;
+               ">
+                <img src="./img/icon/star.png" class="img5" style="height: 168px;
+                position: absolute;
+                left: 1266px;
+                z-index: 2;
+                margin: -189px -9px;
+               
+            ">
+                <img src="./img/icon/caterpillar.png" class="img4" style="    height: 223px;
+                position: absolute;
+                left: 1622px;
+                z-index: 2;
+                ">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Little Caterpillars</h4>
+                        <p style="color: #ede7e7;">A sanctuary where little chrysalides are nurtured to blossom into
+                            beautiful, wise, and independent butterflies, equipped to soar with the joys and adventures
+                            of life and embrace a lifelong love of learning as tomorrow's leaders
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <!-- <i class="fas fa-share fa-2x text-white me-2"></i> -->
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Quick Links</h4>
+                        <a href="mission.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="curriculum.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Curriculum</a>
+                        <a href="schools.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Our Schools</a>
+                        <a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Enquire Now</a>
+                        <a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Programs</h4>
+                        <a href="toddler.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PlayGroup</a>
+                        <a href="nursery.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Nursery</a>
+                        <a href="pp1.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-1</a>
+                        <a href="pp2.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-2</a>
+                        <a href="daycare.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Daycare</a>
+                        <a href="activity.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Activity Center</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Contact Info</h4>
+                        <a href="" style="color: white;
+                        font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> 320, KPR Colony, Manikonda,
+                            Hyderabad, Telangana 500089 </a>
+                        <a href="" style="color: white;
+                            font-size: 16px;"><i class="fas fa-phone me-2"></i> 093792 23344</a>
+
+                        <a href="" style="color: white;
+                            font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> Plot no. 84, Tirumala Hills,
+                            Road No. 4, near GHMC park, Puppal Guda,
+                            Hyderabad, Telangana 500089:</a>
+                        <a href="" style="color: white;
+                        font-size: 16px;"><i class="fas fa-phone me-2"></i> 8792111222</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="footer-text " style="font-size: 17px;
+                                color: #fff8f8bf;">
+                                    Copyright &copy;
+                                    2023 Little Caterpillars Preschool
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

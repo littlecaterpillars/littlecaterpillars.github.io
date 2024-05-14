@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Little Caterpillars</title>
+  <link rel="icon" href="img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- animate CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- owl carousel CSS -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- themify CSS -->
+  <link rel="stylesheet" href="css/themify-icons.css">
+  <!-- flaticon CSS -->
+  <link rel="stylesheet" href="css/flaticon.css">
+  <!-- font awesome CSS -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- swiper CSS -->
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+    crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <style>
+    .breadcrumb_bg {
+    background-image: url('./img/kids-1/Banner\ 4.png');
+    /* background-image: url(../img/kids-1/about-1.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+
+
+    .form-popup-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .form-popup-bg {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(94, 110, 141, 0.9);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      overflow-y: auto;
+      z-index: 10000;
+    }
+
+    .form-popup-bg.is-visible {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+      -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+      transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+
+    .form-container {
+      background-color: #2d3638;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      padding: 40px;
+      color: #fff;
+    }
+
+    .close-button {
+      background: none;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: solid 1px #fff;
+    }
+
+    .form-popup-bg:before {
+      content: '';
+      background-color: #fff;
+      opacity: .25;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .footer {
+      background-color: #b72167;
+      /* background: linear-gradient(rgb(0 0 0 / 61%), rgb(0 0 0 / 33%)), url(./img/kids-1/Footer\ Banner.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; */
+    }
+
+    .footer .footer-item a {
+      /* line-height: 35px; */
+      color: var(--bs-body);
+      transition: 0.5s;
+      line-height: 30px;
+    }
+
+    .footer .footer-item p {
+      line-height: 35px;
+    }
+
+    .footer .footer-item a:hover {
+      letter-spacing: 2px;
+      color: var(--bs-primary);
+    }
+
+    /*** Footer End ***/
+
+    /*** copyright Start ***/
+    .copyright {
+      background: var(--bs-dark) !important;
+    }
+
+    .tabs {
+      font-family: "Libre Franklin", Arial, sans-serif;
+      max-width: 71rem;
+      margin: 4rem auto;
+      /* border: 2px solid #16262c; */
+      /* background: #16262c; */
+      color: #ddd;
+      padding: max(calc(50vh - 22rem), 1rem) 1rem 1rem;
+      font-size: 18px;
+    }
+
+    h1 {
+      margin-bottom: 2em;
+      text-align: center;
+      color: #fff;
+
+      span {
+        color: #77b728;
+      }
+    }
+
+    p {
+      color: #ffffff7f;
+      /* font-size: 1.2rem; */
+      line-height: 1.66;
+      font-weight: 300;
+      margin: 1rem 0 1.5rem;
+
+      strong {
+        color: #ddd;
+        font-weight: 700;
+      }
+    }
+
+    .details-tab {
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      color: #ffffffcc;
+      font-weight: 600;
+      display: block;
+      order: 0;
+      /* background: #ffffff13; */
+      background: #16262c;
+      border-radius: 1.5rem;
+      margin-right: 0.35rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      border: 2px solid transparent;
+
+      &:hover,
+      &:focus {
+        border-color: #fff;
+      }
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+
+    .details-tabs {
+      position: relative;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+    .details-content {
+      order: 1;
+      /* padding: 1rem; */
+      width: 100%;
+      margin: 40px 0;
+
+      details {
+        summary {
+          font-weight: 600;
+        }
+
+        margin: 1.5rem;
+      }
+    }
+
+    .details-item {
+      display: contents;
+
+      &[open] {
+        &>.details-tab {
+          /* background: #fff;
+          color: #333; */
+          background: #16262c;
+          color: #fff;
+        }
+      }
+    }
+    @media (max-width: 1283px) {
+      .details-content iframe{
+        width: auto !important;
+      }
+    }
+    @media (max-width: 576px) {
+            .img1{
+                display: none;
+            }
+            .img2{
+                display: none; 
+            }
+            .img3{
+                display: none;
+            }
+            
+        }
+    
+
+    
+  </style>
+</head>
+
+<body>
+  <!--::header part start::-->
+  <header class="main_menu home_menu">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="./img/kids-1/logo-1.jpg" style="height: 61px;
+                          width: 205px;" />
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse main-menu-item justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html" style="font-size: 18px;
+                                  font-weight: 500;">Home</a>
+                </li>
+                <div class="nav-item dropdown">
+                  <a href="JavaScript:void(0)" class="nav-link dropdown-toggle"
+                      data-bs-toggle="dropdown" style="font-size: 18px;
+                  font-weight: 500;color: rgb(18 17 20 / 80%);">About</a>
+                  <div class="dropdown-menu m-0">
+                      <a href="mission.html" class="dropdown-item">About Us</a>
+                      <!-- <a href="vision.html" class="dropdown-item">Vision</a> -->
+                      <a href="managment.html" class="dropdown-item">Board of Directors</a>
+                      <a href="keyfeatures.html" class="dropdown-item">Key Features</a>
+
+                  </div>
+              </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="curriculum.html" style="font-size: 18px;
+                                  font-weight: 500;">Curriculum</a>
+                </li>
+                <div class="nav-item dropdown">
+                  <a href="JavaScript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 18px;
+                                  font-weight: 500;color: rgb(18 17 20 / 80%);">Programs</a>
+                  <div class="dropdown-menu m-0">
+                    <a href="toddler.html" class="dropdown-item">PlayGroup</a>
+                    <a href="nursery.html" class="dropdown-item">Nursery</a>
+                    <a href="pp1.html" class="dropdown-item">PP-I</a>
+                    <a href="pp2.html" class="dropdown-item">PP-II</a>
+                    <a href="daycare.html" class="dropdown-item">Daycare</a>
+                    <a href="activity.html" class="dropdown-item">Activity Center</a>
+                  </div>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="schools.html" style="font-size: 18px;
+                                  font-weight: 500;">Our Schools</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="career.html" style="font-size: 18px;
+                  font-weight: 500;">Careers</a>
+              </li>
+                <li class="nav-item active">
+                  <a class="nav-link active" href="contact.html" style="font-size: 18px;
+                                  font-weight: 500;">Contact Us</a>
+                </li>
+                <li class="d-none d-lg-block">
+                  <a class="btn_1" id="btnOpenForms" href="#" style="font-size: 18px;
+                                  font-weight: 500;">Enroll Now</a>
+                </li>
+
+
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header part end-->
+  <div class="form-popup-bg">
+    <div class="form-container">
+      <button id="btnCloseForms" class="close-button">X</button>
+      <h1 style="color: white;">Contact Us</h1>
+      <p style="color: white;">For more information. Please complete this form.</p>
+      <br>
+      <form action="" class=" pr-5 mb-5" method="post" id="contactForm" name="submit-to-google-sheet">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+          </div>
+          <div class="col-md-6 form-group">
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <textarea class="form-control" name="message" id="message" cols="10" rows="3"
+              placeholder="Write your message"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <input type="submit" value="Send Message" style="color: #11401c;
+                                            background-color: #9ef09f;
+                                            border-color: #9ef09f;" class="btn btn-primary rounded-0 py-2 px-4">
+            <span class="submitting"></span>
+          </div>
+        </div>
+
+
+      </form>
+
+
+    </div>
+  </div>
+  <script>
+    function closeForm() {
+      $('.form-popup-bg').removeClass('is-visible');
+    }
+
+    $(document).ready(function ($) {
+
+      /* Contact Form Interactions */
+      $('#btnOpenForms').on('click', function (event) {
+        event.preventDefault();
+
+        $('.form-popup-bg').addClass('is-visible');
+      });
+
+      //close popup when clicking x or off popup
+      $('.form-popup-bg').on('click', function (event) {
+        if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForms')) {
+          event.preventDefault();
+          $(this).removeClass('is-visible');
+        }
+      });
+
+
+
+    });
+
+  </script>
+
+  <!-- breadcrumb start-->
+  <section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner text-center">
+            <div class="breadcrumb_iner_item">
+              <div class="breadcrumb_iner_item">
+                <!-- <main class="main">
+                  <div>
+                    <div class="flower-block">
+                      <div class="face">
+                        <span class="bouquet"></span>
+                        <span class="bouquet"></span>
+                      </div>
+                      <div class="flower-common flower-1">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                      </div>
+                      <div class="flower-common flower-2">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                      </div>
+                      <div class="flower-common flower-3">
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                        <div class="petal"></div>
+                      </div>
+                      <div class="waves">
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                      </div>
+                    </div>
+                    <div class="flowers-title">
+                      <h1></h1>
+                      <p style="color: white;
+                            font-size: 23px;
+                            margin: 29px 0;">Little Caterpillars</p>
+                    </div>
+                  </div>
+                </main> -->
+                
+              </div>
+              <h2>Contact us</h2>
+              <p>Home<span>/<span>Contact us</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb start-->
+
+  <section class="tabs">
+    <!-- <h1 style="color: #11401c;
+    text-align: justify;">Our Locations</h1> -->
+<!-- <img src="./img/icon/star.png" style="    height: 289px;
+position: absolute;
+left: 1603px;"> -->
+    <div class="details-tabs">
+      <details class="details-item" open> <!-- default first "tab" to open -->
+        <summary class="details-tab">Little Caterpillars Manikonda</summary>
+        <div class="details-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15228.891459148437!2d78.3797232!3d17.4010891!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb941feb2e5b71%3A0x550a415f6d7bc215!2sLittle%20Caterpillars%20Preschool%20%26%20Daycare%20-%20Best%20Preschool%20%26%20Daycare%20in%20Manikonda!5e0!3m2!1sen!2sin!4v1710614551816!5m2!1sen!2sin"
+            width="1070" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </details>
+      <details class="details-item">
+        <summary class="details-tab">Little Caterpillars Tirumala hills</summary>
+        <div class="details-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15229.178118442633!2d78.3835173!3d17.3976475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95ea39f9307b%3A0xb9d0e81939b8a14c!2sLittle%20Caterpillars%20Preschool%20%26%20Daycare%20in%20Tirumala%20Hills%20-%20Best%20Preschool%20%26%20Daycare%20in%20Manikonda!5e0!3m2!1sen!2sin!4v1710614761307!5m2!1sen!2sin"
+            width="1070" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </details>
+      <details class="details-item">
+        <summary class="details-tab">Wings of Wonder - The Foundation School</summary>
+        <div class="details-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30455.575502300693!2d78.36199481694571!3d17.414333942532462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9424f3ebe9ef%3A0x1598a41b04e9ba4c!2sWings%20of%20Wonder%20-%20The%20Foundation%20School%20in%20Manikonda%20%7C%20Best%20school%20in%20Manikonda!5e0!3m2!1sen!2sin!4v1710614846548!5m2!1sen!2sin"
+            width="1070" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </details>
+
+    </div>
+    <script>
+      // $(selector).attrchange(): a call back function for when an attribute changes
+      //
+      // can return attribute changes for selector
+      (function ($) {
+        var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+        $.fn.attrchange = function (callback) {
+          if (MutationObserver) {
+            var options = {
+              subtree: false,
+              attributes: true
+            };
+
+            var observer = new MutationObserver(function (mutations) {
+              mutations.forEach(function (e) {
+                callback.call(e.target, e.attributeName);
+              });
+            });
+
+            return this.each(function () {
+              observer.observe(this, options);
+            });
+
+          }
+        }
+      })(jQuery);
+
+      // when one details opens, close the others
+      $('.details-item').attrchange(function (attribute) {
+        if (attribute == "open" && $(this).attr("open")) {
+          $(this).siblings(".details-item").removeAttr("open");
+        }
+      });
+
+      // keyboard: prevent closing the open details to emulate tabs
+      $('.details-tab').on("keydown", function (e) {
+        if (e.keyCode == 32 || e.keyCode == 13) {
+          if ($(this).parent().attr("open")) {
+            e.preventDefault();
+          }
+        }
+      });
+
+      // mouse: prevent closing the open details to emulate tabs
+      $('.details-tab').on("click", function (e) {
+        if ($(this).parent().attr("open")) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </section>
+  <!-- ================ contact section start ================= -->
+  <section class="contact-section section_padding">
+    <div class="container">
+<img src="./img/icon/sun.png" class="img1" style="height: 390px;
+position: absolute;
+left: 100px;">
+
+
+      <div class="row">
+        <div class="col-12">
+          <div class="learning_member_text">
+            <!-- <h5>Contact</h5> -->
+            <h2>Get In Touch</h2>
+            <!-- <p class="text" style="margin-top: -23px !important;">
+                Educating the mind without educating the heart is no education at all.</p> -->
+
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact contact_form" action="https://script.google.com/macros/s/AKfycbwdiCKhGoD_E-B7fIUyF5QrwB3AYatAOuHH0zCposNPmoKU8cCAvX-uyWyorHux_DPE/exec" name="submit-to-google-sheet" method="post" id="contactForm"
+            novalidate="novalidate">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter your name'" placeholder='Enter your name'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter email address'" placeholder='Enter email address'>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="phone" id="phone" type="text" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Phone Number'" placeholder='Enter Phone Number'>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+
+                  <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+                    placeholder='Enter Message'></textarea>
+                </div>
+              </div>
+
+
+              <!-- <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder = 'Enter Subject'>
+                </div>
+              </div> -->
+            </div>
+            <div class="form-group mt-3">
+              <button type="submit" class="button button-contactForm btn_1">Send Message</button>
+            </div>
+            <script>
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbwdiCKhGoD_E-B7fIUyF5QrwB3AYatAOuHH0zCposNPmoKU8cCAvX-uyWyorHux_DPE/exec'
+              const form = document.forms['submit-to-google-sheet']
+
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                  .then(response =>
+                    alert('Success!')
+                  )
+                  .catch(error => console.error('Error!', error.message))
+              })
+            </script>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16" style="color: #1a858d;">
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </i></span>
+            <div class="media-body">
+              <h3>320, KPR Colony, Manikonda, Hyderabad, Telangana 500089</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet" style="color: #1a858d;"></i></span>
+            <div class="media-body">
+              <h3>+91 9379223344</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16" style="color: #1a858d;">
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+              </i></span>
+            <div class="media-body">
+              <h3>Plot no. 84, Tirumala Hills,
+                Road No. 4, near GHMC park, Puppal Guda, Puppalguda,
+                Hyderabad, Telangana 500089:</h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-tablet" style="color: #1a858d;"></i></span>
+            <div class="media-body">
+              <h3>+91 8792111222</h3>
+              <p></p>
+            </div>
+          </div>
+          <!-- <div class="media contact-info">
+            <span class="contact-info__icon"><i class="ti-email" style="color: #1a858d;"></i></span>
+            <div class="media-body">
+              <h3>support@caterpillar.com</h3>
+              <p></p>
+            </div>
+            <a href="" style="color: white;
+              font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> 320, KPR Colony, Manikonda,
+              Hyderabad, Telangana 500089 </a>
+           
+
+            <a href="" style="color: white;
+              font-size: 16px;"><i class="fas fa-phone me-2"></i> 093792 23344</a>
+               <a href="" style="color: white;
+               font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> </a>
+           <a href="" style="color: white;
+           font-size: 16px;"><i class="fas fa-phone me-2"></i>  8792111222</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================ contact section end ================= -->
+
+  <!--footer start-->
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Little Caterpillars</h4>
+            <p style="color: #ede7e7;">A sanctuary where little chrysalides are nurtured to blossom into
+              beautiful, wise, and independent butterflies, equipped to soar with the joys and adventures
+              of life and embrace a lifelong love of learning as tomorrow's leaders
+          </p>
+            <div class="d-flex align-items-center">
+              <!-- <i class="fas fa-share fa-2x text-white me-2"></i> -->
+              <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                  class="fab fa-facebook-f"></i></a>
+              <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                  class="fab fa-twitter"></i></a>
+              <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                  class="fab fa-instagram"></i></a>
+              <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                  class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Quick Links</h4>
+                        <a href="mission.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="curriculum.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Curriculum</a>
+                        <a href="schools.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Our Schools</a>
+                        <a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Enquire Now</a>
+						<a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Programs</h4>
+                        <a href="toddler.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PlayGroup</a>
+                        <a href="nursery.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Nursery</a>
+                        <a href="pp1.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-1</a>
+						<a href="pp2.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-2</a>
+						<a href="daycare.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Daycare</a>
+						<a href="activity.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Activity Center</a>
+
+          </div>
+      </div>
+        <div class="col-md-6 col-lg-6 col-xl-3">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="mb-4 text-white">Contact Info</h4>
+            <a href="" style="color: white;
+              font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> 320, KPR Colony, Manikonda,
+              Hyderabad, Telangana 500089 </a>
+           
+
+            <a href="" style="color: white;
+              font-size: 16px;"><i class="fas fa-phone me-2"></i> 93792 23344</a>
+               <a href="" style="color: white;
+               font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> Plot no. 84, Tirumala Hills,
+               Road No. 4, near GHMC park, Puppal Guda, 
+               Hyderabad, Telangana 500089:</a>
+           <a href="" style="color: white;
+           font-size: 16px;"><i class="fas fa-phone me-2"></i>  8792111222</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="copyright_part_text text-center">
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="footer-text " style="font-size: 17px;
+                      color: #fff8f8bf;">
+                  Copyright &copy;
+                  2023 Little Caterpillars Preschool
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- jquery plugins here-->
+  <!-- jquery -->
+  <script src="js/jquery-1.12.1.min.js"></script>
+  <!-- popper js -->
+  <script src="js/popper.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- easing js -->
+  <script src="js/jquery.magnific-popup.js"></script>
+  <!-- swiper js -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <!-- swiper js -->
+  <script src="js/masonry.pkgd.js"></script>
+  <!-- particles js -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- contact js -->
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.form.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src="js/contact.js"></script>
+
+  <!-- slick js -->
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

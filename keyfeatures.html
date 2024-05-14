@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Little Caterpillars</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+    <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+        integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+    <style>
+        .breadcrumb_bg {
+    background-image: url('./img/kids-1/Banner\ 3-1.png');
+    /* background-image: url(../img/kids-1/about-1.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        @media (max-width: 576px) {
+            .img1 {
+                display: none;
+            }
+
+            .img2 {
+                display: none;
+            }
+
+            .img3 {
+                display: none;
+            }
+
+        }
+
+        .img1 {
+            transform: rotate(-40deg);
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+
+
+        .form-popup-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .form-popup-bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(94, 110, 141, 0.9);
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            transition: opacity 0.3s 0s, visibility 0s 0.3s;
+            overflow-y: auto;
+            z-index: 10000;
+        }
+
+        .form-popup-bg.is-visible {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+            -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+            transition: opacity 0.3s 0s, visibility 0s 0s;
+        }
+
+        .form-container {
+            background-color: #2d3638;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            padding: 40px;
+            color: #fff;
+        }
+
+        .close-button {
+            background: none;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: solid 1px #fff;
+        }
+
+        .form-popup-bg:before {
+            content: '';
+            background-color: #fff;
+            opacity: .25;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        /* .services .learning_img_imgs {
+    background-image: url('./img');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 70% 100%;
+    background-position: left top;
+    position: absolute;
+    left: -85px;
+    bottom: 27px;
+} */
+        #services {
+            padding: 26px 0 40px 0;
+        }
+
+        #services .box {
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 0 10px 40px 10px;
+            background: #fff;
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            /* height: 480px; */
+        }
+
+        .footer {
+            background-color: #b72167;
+            /* background: linear-gradient(rgb(0 0 0 / 61%), rgb(0 0 0 / 33%)), url(./img/kids-1/Footer\ Banner.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+
+        .footer .footer-item a {
+            /* line-height: 35px; */
+            color: var(--bs-body);
+            transition: 0.5s;
+            line-height: 30px;
+        }
+
+        .footer .footer-item p {
+            line-height: 35px;
+        }
+
+        .footer .footer-item a:hover {
+            letter-spacing: 2px;
+            color: var(--bs-primary);
+        }
+
+        /*** Footer End ***/
+
+        /*** copyright Start ***/
+        .copyright {
+            background: var(--bs-dark) !important;
+        }
+
+
+        #services .box:hover {
+            transform: scale(1.1);
+        }
+
+        #services .icon {
+            margin: 0 auto 15px auto;
+            padding-top: 12px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        #services .icon .service-icon {
+            font-size: 36px;
+            line-height: 1;
+        }
+
+        #services .title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        #services .title a {
+            color: #111;
+        }
+
+        #services .box:hover .title a {
+            /* color: #c59c35; */
+            color: #11401c !important;
+        }
+
+        #services .box:hover .title a:hover {
+            text-decoration: none;
+        }
+
+        #services .description {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 0;
+            /* text-align: center; */
+        }
+
+
+        /* Style the image container */
+        .image {
+            width: 100%;
+            height: 200px;
+            background-color: #555;
+            border-radius: 10px 10px 0 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Style the image */
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        /* Style the card content */
+        .content {
+            padding: 10px;
+        }
+
+        /* Style the card title */
+        .title {
+            /* color: grey;
+            font-size: 18px; */
+            color: #016d41;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        /* Style the card description */
+        .description {
+            color: black;
+            /* font-size: 14px;
+            color: black; */
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Style the card button */
+        .button {
+            border: none;
+            outline: none;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        /* Style the hover state of the card */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            transform: scale(1.06);
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        /* Style the hover state of the image */
+        .image:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Style the hover state of the button */
+        .button:hover {
+            background-color: #555;
+        }
+
+
+        a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        .cta-arrow {
+            --shift-distance: 0.25rem;
+            display: inline-block;
+            font-weight: 400;
+            font-size: var(--copy-regular-size);
+            line-height: 20px !important;
+            height: 2rem;
+            color: var(--link-color);
+            text-decoration: none;
+            position: relative;
+            padding-right: 2.5rem;
+            transform: translateX(0);
+            z-index: 1;
+            transition: color 0.15s ease-in-out, transform 0.3s ease, -webkit-transform 0.3s ease;
+            border-radius: 2em;
+
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -0.875rem;
+                right: 0;
+                left: calc(100% - 2rem);
+                border-radius: 2rem;
+                height: 3rem;
+                z-index: -1;
+                background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'%3E%3Ctitle%3EArrow Forward%3C/title%3E%3Cpath fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='48' d='M268 112l144 144-144 144M392 256H100'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position-x: calc(100% - 0.4375rem);
+                background-position-y: center;
+                background-size: 1.125rem;
+                /* background-color: #ffe01b; */
+                background-color: #28a745b3;
+                transition: left 0.3s cubic-bezier(0.34, 1.2, 0.64, 1), right 0.3s ease,
+                    background-position 0.3s ease;
+            }
+
+            &:hover {
+                color: var(--link-color-hovered);
+                transform: translateX(var(--shift-distance));
+
+                &::before {
+                    background-position-x: calc(100% - var(--shift-distance) * 3.5);
+                    left: calc(var(--shift-distance) * -4);
+                    transition: left 0.3s cubic-bezier(0.4, 1.7, 0.7, 0.8), right 0.3s ease,
+                        background-position 0.3s ease;
+                }
+            }
+        }
+
+        .card {
+            box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+            transition: all 0.3s ease-in-out;
+            width: 318px;
+            height: 421px;
+            /* height: 242px; */
+            margin: 6px -4px;
+        }
+
+        .news {
+            padding: 4.8px 0 9.6px 0;
+            text-align: center;
+        }
+
+        .news-heading {
+            font-size: 44px;
+            line-height: 1.4;
+
+            color: #333;
+        }
+
+        .news p {
+            font-size: 18px;
+            margin-bottom: 16px;
+            margin-top: 12px;
+            line-height: 1.8;
+        }
+
+        .card-block {
+            padding: 21px
+        }
+
+        input[type="email"] {
+            display: inline-block;
+            width: 60%;
+            padding: 18px 36px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            height: 70px;
+            margin-top: 53px;
+            /* margin-top: 18px; */
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06);
+        }
+
+        input,
+        input::-webkit-input-placeholder {
+            font-size: 16px;
+            line-height: 3;
+        }
+
+        .bt {
+            margin-left: -160px;
+            font-size: 16px;
+            display: inline-block;
+            font-weight: 600;
+            padding: 16px 32px;
+            border-radius: 20px;
+            background-color: #11401c;
+
+            /* Only necessary for .btn */
+            border: none;
+            cursor: pointer;
+            /* background-color: #48b774; */
+            color: #fff;
+        }
+
+        .card-title {
+            color: #6e9837;
+        }
+
+        /* @media (max-width: 576px) {
+
+            .learning_part .learning_member_text {
+                padding-left: 0;
+                margin: 115px 0;
+            }
+
+            .advance_feature {
+                padding: 80px 0px 70px;
+                overflow: hidden;
+                margin: -380px 0;
+            }
+
+            .text {
+                position: absolute;
+                top: 297px;
+            }
+        } */
+        /* CSS Document */
+    </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./img/kids-1/logo-1.jpg" style="height: 61px;
+                            width: 205px;" />
+
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html" style="font-size: 18px;
+                                    font-weight: 500;">Home</a>
+                                </li>
+                                <div class="nav-item dropdown">
+                                    <a href="JavaScript:void(0)" class="nav-link dropdown-toggle nav-link active"
+                                        data-bs-toggle="dropdown" style="font-size: 18px;
+                                    font-weight: 500;color: rgb(18 17 20 / 80%);">About</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a href="mission.html" class="dropdown-item">About Us</a>
+                                        <!-- <a href="vision.html" class="dropdown-item">Vision</a> -->
+                                        <a href="managment.html" class="dropdown-item">Board of Directors</a>
+                                        <a href="keyfeatures.html" class="dropdown-item nav-link active">Key
+                                            Features</a>
+
+                                    </div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="curriculum.html" style="font-size: 18px;
+                                    font-weight: 500;">Curriculum</a>
+                                </li>
+                                <div class="nav-item dropdown">
+                                    <a href="JavaScript:void(0)" class="nav-link dropdown-toggle"
+                                        data-bs-toggle="dropdown" style="font-size: 18px;
+                                    font-weight: 500;color: rgb(18 17 20 / 80%);">Programs</a>
+                                    <div class="dropdown-menu m-0">
+                                        <a href="toddler.html" class="dropdown-item">PlayGroup</a>
+                                        <a href="nursery.html" class="dropdown-item">Nursery</a>
+                                        <a href="pp1.html" class="dropdown-item">PP-I</a>
+                                        <a href="pp2.html" class="dropdown-item">PP-II</a>
+                                        <a href="daycare.html" class="dropdown-item">Daycare</a>
+                                        <a href="activity.html" class="dropdown-item">Activity Center</a>
+                                    </div>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="schools.html" style="font-size: 18px;
+                                    font-weight: 500;">Our Schools</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="career.html" style="font-size: 18px;
+                                    font-weight: 500;">Careers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html" style="font-size: 18px;
+                                    font-weight: 500;">Contact Us</a>
+                                </li>
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_1" id="btnOpenForm" href="#" style="font-size: 18px;
+                                    font-weight: 500;">Enroll Now</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+    <div class="form-popup-bg">
+        <div class="form-container">
+            <button id="btnCloseForm" class="close-button">X</button>
+            <h1 style="color: white;">Contact Us</h1>
+            <p style="color: white;">For more information. Please complete this form.</p>
+            <br>
+            <form action="" class=" pr-5 mb-5" method="post" id="contactForm" name="submit-to-google-sheet">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <textarea class="form-control" name="message" id="message" cols="10" rows="3"
+                            placeholder="Write your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="submit" value="Send Message" style="color: #11401c;
+                                                background-color: #9ef09f;
+                                                border-color: #9ef09f;" class="btn btn-primary rounded-0 py-2 px-4">
+                        <span class="submitting"></span>
+                    </div>
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+    <script>
+        function closeForm() {
+            $('.form-popup-bg').removeClass('is-visible');
+        }
+
+        $(document).ready(function ($) {
+
+            /* Contact Form Interactions */
+            $('#btnOpenForm').on('click', function (event) {
+                event.preventDefault();
+
+                $('.form-popup-bg').addClass('is-visible');
+            });
+
+            //close popup when clicking x or off popup
+            $('.form-popup-bg').on('click', function (event) {
+                if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+                    event.preventDefault();
+                    $(this).removeClass('is-visible');
+                }
+            });
+
+
+
+        });
+
+    </script>
+
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner text-center">
+                        <div class="breadcrumb_iner_item">
+
+                            <h2>Key Features
+                            </h2>
+                            <p>Home<span>/</span>Key Features
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <div class="py-5">
+        <div class="container">
+            <h2 style="font-family: Dk cover up;
+            color: #ec0667;
+            text-align: center;">The Little Caterpillars Differences</h2>
+            <br>
+            <br> <img src="./img/icon/cloud.png" class="img3" style="height: 254px;
+            position: absolute;
+            left: 1476px;
+            ">
+
+            <div class="row hidden-md-up">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/Child Centric.png" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Child-Centric Discovery Curriculum</h4>
+                            <p class="card-text p-y-1">
+                                Little Caterpillars promotes hands-on learning and exploration. Children engage in
+                                interactive activities that help develop essential skills and cultivate a lifelong
+                                passion for learning.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/Creative classroms.png" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Creative Classrooms</h4>
+                            <p class="card-text p-y-1">
+                                Our innovative classrooms are crafted to ignite imagination and curiosity in young
+                                learners. With engaging activities, vibrant environments, and hands-on experiences, we
+                                inspire creativity at every turn.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/Multi sensory learning.png" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Multi-Sensory Learning</h4>
+                            <p class="card-text p-y-1">
+                                Our approach involves engaging all senses to enhance understanding. We offer
+                                interactive, tactile, and dynamic learning experiences for holistic development.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <img src="./img/icon/rainbow.png" class="img1" style="height: 254px;
+            position: absolute;
+            left: 235px;
+            margin: -566px 0;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/AC Campus.jpg" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">AC Campus</h4>
+                            <p class="card-text p-y-1">
+                                Little Caterpillar provides comfortable, well-designed air-conditioned learning studios
+                                and social spaces for children.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/Play.jpg"
+                                style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Play Spaces-That Create Inspire To Go Beyond</h4>
+                            <p class="card-text p-y-1">
+                                Our vibrant and safe play areas are designed for laughter, exploration, and building
+                                friendships, creating an enriching environment that fosters your child’s holistic
+                                development.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/GPS.jpg" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Live Tracking GPS-Enabled Transportation</h4>
+                            <p class="card-text p-y-1">
+                                Ensuring children's safety and keeping parents informed at all times is our priority.
+                                Our transportation features live GPS tracking for peace of mind.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" style="margin: 26px -15px;">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/Parental team.jpg" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Parent Relations Team</h4>
+                            <p class="card-text p-y-1">
+                                Little Caterpillar's dedicated Parent Relations Team is your bridge to a collaborative
+                                educational partnership, ensuring your child's success and well-being every step of the
+                                way.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/Parents App.jpg" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Seamless Parental App</h4>
+                            <p class="card-text p-y-1">
+                                Little Caterpillar's intuitive parental app keeps you closely connected with your
+                                child’s educational journey, providing real-time updates and insights right at your
+                                fingertips.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-block">
+                            <img src="img/kids-1/Lunch.jpg" style="    height: 166px;
+                            width: 272px;">
+                            <br><br>
+                            <h4 class="card-title">Meal Program</h4>
+                            <p class="card-text p-y-1">
+                                At Little Caterpillar, our wholesome experience extends into meticulous nutrition
+                                planning. Under the guidance of food experts, children enjoy naturally sourced and
+                                safely prepared meals on campus.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <img src="./img/icon/flowers.png" class="img2" style="    height: 254px;
+            position: absolute;
+            left: 1456px;
+            margin: -566px 0;">
+        </div>
+    </div>
+
+
+
+
+    <!--footer start-->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Little Caterpillars</h4>
+                        <p style="color: #ede7e7;font-size: 16px;">A sanctuary where little chrysalides are nurtured
+                            to blossom into
+                            beautiful, wise, and independent butterflies, equipped to soar with the joys and adventures
+                            of life and embrace a lifelong love of learning as tomorrow's leaders
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <!-- <i class="fas fa-share fa-2x text-white me-2"></i> -->
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Quick Links</h4>
+                        <a href="mission.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="curriculum.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Curriculum</a>
+                        <a href="schools.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Our Schools</a>
+                        <a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Enquire Now</a>
+						<a href="contact.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Programs</h4>
+                        <a href="toddler.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PlayGroup</a>
+                        <a href="nursery.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Nursery</a>
+                        <a href="pp1.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-1</a>
+						<a href="pp2.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> PP-2</a>
+						<a href="daycare.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Daycare</a>
+						<a href="activity.html" style="color: white;
+                    font-size: 16px;"><i class="fas fa-angle-right me-2"></i> Activity Center</a>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Contact Info</h4>
+                        <a href="" style="color: white;
+                    font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> 320, KPR Colony, Manikonda,
+                            Hyderabad, Telangana 500089 </a>
+
+
+                        <a href="" style="color: white;
+                    font-size: 16px;"><i class="fas fa-phone me-2"></i> 093792 23344</a>
+                        <a href="" style="color: white;
+                     font-size: 16px;"><i class="fa fa-map-marker-alt me-2"></i> Plot no. 84, Tirumala Hills,
+                            Road No. 4, near GHMC park, Puppal Guda,
+                            Hyderabad, Telangana 500089:</a>
+                        <a href="" style="color: white;
+                 font-size: 16px;"><i class="fas fa-phone me-2"></i> 8792111222</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="footer-text " style="font-size: 17px;
+                            color: #fff8f8bf;">
+                                    Copyright &copy;
+                                    2023 Little Caterpillars Preschool
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
