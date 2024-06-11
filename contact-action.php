@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     {
         $_SESSION['info']="Sorry try again...";
         //echo $errorMessage = error_get_last()['message'];
-        header('Location:/');
+        header('Location:404.html');
         exit();
     }
 }
