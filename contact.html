@@ -356,7 +356,7 @@
       <h1 style="color: white;">Contact Us</h1>
       <p style="color: white;">For more information. Please complete this form.</p>
       <br>
-      <form action="" class=" pr-5 mb-5" method="post" id="contactForm" name="submit-to-google-sheet">
+      <form action="contact-action.php" class=" pr-5 mb-5" method="post" >
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" class="form-control" name="name" id="name" placeholder="Name">
@@ -381,7 +381,7 @@
             <input type="submit" value="Send Message" style="color: #11401c;
                                             background-color: #9ef09f;
                                             border-color: #9ef09f;" class="btn btn-primary rounded-0 py-2 px-4">
-            <span class="submitting"></span>
+           
           </div>
         </div>
 
@@ -391,33 +391,7 @@
 
     </div>
   </div>
-  <script>
-    function closeForm() {
-      $('.form-popup-bg').removeClass('is-visible');
-    }
-
-    $(document).ready(function ($) {
-
-      /* Contact Form Interactions */
-      $('#btnOpenForms').on('click', function (event) {
-        event.preventDefault();
-
-        $('.form-popup-bg').addClass('is-visible');
-      });
-
-      //close popup when clicking x or off popup
-      $('.form-popup-bg').on('click', function (event) {
-        if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForms')) {
-          event.preventDefault();
-          $(this).removeClass('is-visible');
-        }
-      });
-
-
-
-    });
-
-  </script>
+ 
 
   <!-- breadcrumb start-->
   <section class="breadcrumb breadcrumb_bg">
