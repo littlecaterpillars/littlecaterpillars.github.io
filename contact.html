@@ -558,8 +558,7 @@ left: 100px;">
           </div>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="https://script.google.com/macros/s/AKfycbwdiCKhGoD_E-B7fIUyF5QrwB3AYatAOuHH0zCposNPmoKU8cCAvX-uyWyorHux_DPE/exec" name="submit-to-google-sheet" method="post" id="contactForm"
-            novalidate="novalidate">
+          <form class="form-contact contact_form" action="contact-action.php" method="post" novalidate="novalidate">
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
@@ -589,28 +588,11 @@ left: 100px;">
               </div>
 
 
-              <!-- <div class="col-12">
-                <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder = 'Enter Subject'>
-                </div>
-              </div> -->
             </div>
             <div class="form-group mt-3">
               <button type="submit" class="button button-contactForm btn_1">Send Message</button>
             </div>
-            <script>
-              const scriptURL = 'https://script.google.com/macros/s/AKfycbwdiCKhGoD_E-B7fIUyF5QrwB3AYatAOuHH0zCposNPmoKU8cCAvX-uyWyorHux_DPE/exec'
-              const form = document.forms['submit-to-google-sheet']
-
-              form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                  .then(response =>
-                    alert('Success!')
-                  )
-                  .catch(error => console.error('Error!', error.message))
-              })
-            </script>
+           
           </form>
         </div>
         <div class="col-lg-4">
